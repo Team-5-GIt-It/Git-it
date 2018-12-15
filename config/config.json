@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
+    "username": "teamuser",
+    "password": "gitit",
     "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql"
