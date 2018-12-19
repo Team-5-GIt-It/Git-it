@@ -16,18 +16,18 @@
       <label for="Host Name"
         >Your Name: <input type="text" id="hostname"
       /></label>
-      <!-- <label for="Event Name"
+      <label for="Event Name"
         >Event Name: <input type="text" id="eventname"
-      /></label> -->
+      /></label>
 
       <!-- Include Location Services? -->
-      <!-- <h3>Basic Event Information</h3>
+      <h3>Basic Event Information</h3>
       <label for="Location Name"
         >Location Address: <input type="text" id="locationaddress"
-      /></label> -->
+      /></label>
 
       <!-- Let User pick from Calendar using Moment -->
-      <!-- <label for="Date">Date: <input type="date" id="date"/></label>
+      <label for="Date">Date: <input type="date" id="date"/></label>
       <label for="Time"
         >Time // Starts at: <input type="time" id="time-start"/> Ends at:
         <input type="time" id="time-end"
@@ -56,7 +56,7 @@
       </label>
 
       <h3>Please include a brief event description</h3>
-      <label for="Description">Description: <textarea id="description"></textarea></label> -->
+      <label for="Description">Description: <textarea id="description"></textarea></label>
 
       <button type="submit" id="submit">Submit</button>
       <button type="reset" id="reset">Reset Form</button>
@@ -75,41 +75,32 @@
 
           let newHost = {
               name: $("#hostname").val().trim(),
-            //   event: $("#eventname").val().trim(),
-            //   location: $("#locationaddress").val().trim(),
-            //   date: $("#date").val().trim(),
-            //   timeStart : $("#time-start").val().trim(),
-            //   timeEnd: $("#time-end").val().trim(),
-            //   groupSize: $("#groupsize option:selected").val(),
-            //   eventType: $("#eventtype option:selected").val(),
-            //   description: $("#description").val().trim()
+              event: $("#eventname").val().trim(),
+              location: $("#locationaddress").val().trim(),
+              date: $("#date").val().trim(),
+              timeStart : $("#time-start").val().trim(),
+              timeEnd: $("#time-end").val().trim(),
+              groupSize: $("#groupsize option:selected").val(),
+              eventType: $("#eventtype option:selected").val(),
+              description: $("#description").val().trim()
           };
           
           console.log(newHost);
+          
+        $.post("/api/hosts", newHost)
+            .then (function (data) {
+                console.log(data);
+                console.log("survey submitted on the front end!");
+            })
+
+            function resetForm () {
+                $("#hostform").get().reset();
+            };
 
 
-      });
+    });
 
-
-function resetForm () {
-    $("#hostform").get().reset();
-};
-
-
-     
-
-    //   function resetForm () {
-    //     $("#hostname").val().trim(),
-    //          $("#eventname").val().trim(),
-    //          $("#locationaddress").val().trim(),
-    //          $("#date").val().trim(),
-    //            $("#time-start").val().trim(),
-    //            $("#time-end").val().trim(),
-    //         $("#groupsize option:selected").val(),
-    //           $("#eventtype option:selected").val(),
-    //           $("#description").val().trim()
-    //   }
-
+   
     
     </script>
   </body>
