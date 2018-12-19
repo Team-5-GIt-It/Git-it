@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Host Survey Page</title>
+  </head>
+  <body>
+    <h1>HOST</h1>
+    <h2>
+      So you're ready to host a party? Please answer the following questions:
+    </h2>
+    <form>
+      <h3>About You</h3>
+      <label for="Host Name"
+        >Your Name: <input type="text" id="hostname"
+      /></label>
+      <label for="Event Name"
+        >Event Name: <input type="text" id="eventname"
+      /></label>
+
+      <!-- Include Location Services? -->
+      <h3>Basic Event Information</h3>
+      <label for="Location Name"
+        >Location Address: <input type="text" id="locationaddress"
+      /></label>
+
+      <!-- Let User pick from Calendar using Moment -->
+      <label for="Date">Date: <input type="text" id="date"/></label>
+      <label for="Time"
+        >Time // Starts at: <input type="text" id="time-start"/> Ends at:
+        <input type="text" id="time-end"
+      /></label>
+
+      <label for="Group Size"
+        >How big will your party be?
+        <select id="groupsize">
+            <option value="small">Small (0-10)</option>
+            <option value="medium">Medium (11-35)</option>
+            <option value="large">Large (35-100)</option>
+            <option value="large">Huge (101-200)</option>
+        </select>
+      </label>
+   
+      <br>
+      <label for="Event Type">What Kind of party will you be hosting?
+      <select id="eventtype">
+          <option value="Potluck">Potluck</option>
+          <option value="babyshower">Baby Shower</option>
+          <option value="birthdayparty">Birthday Party</option>
+          <option value="graduationparty">Graduation Party</option>
+          <option value="other">Other</option>
+      </select>
+    </label>
+
+    <button type="submit">Submit</button>
+   
+    </form>
+  </body>
+</html>
