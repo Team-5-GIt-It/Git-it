@@ -1,5 +1,6 @@
+//create event
 module.exports = function(sequelize, DataTypes) {
-    var Post = sequelize.define("Post", {
+    var NewEvent = sequelize.define("NewEvent", {
       title: {
         type: DataTypes.STRING,
         allowNull: false,
