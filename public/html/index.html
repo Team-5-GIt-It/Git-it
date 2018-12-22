@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+    
+</head>
+
+<body>
+    <h1>Welcome to the Party Planning Committee!</h1>
+    <h2>Are you a Guest or a Host?</h2>
+    <a href=""><button>Guest</button></a> <a href="./host-survey.html"><button>Host</button></a> <button class="createCode">Secret
+        Code</button>
+        
+
+
+
+
+
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+   
+   <script>
+        // testing to generate secret code
+
+        $(".createCode").on("click", function (event) {
+            event.preventDefault();
+
+            function makeid() {
+                var text = "";
+                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+                for (var i = 0; i < 5; i++)
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+                return text;
+            }
+
+            console.log(makeid());
+        });
+    </script>
+
+</body>
+
+</html>
