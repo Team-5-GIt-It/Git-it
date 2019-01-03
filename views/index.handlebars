@@ -1,53 +1,74 @@
-<!-- - - - - Navbar/Offcanavas - - - - - - -->
+<!-- - - - - Navbar - - - - - - -->
 <nav class="uk-navbar uk-navbar-container  uk-padding-remove-bottom">
-  <div class="uk-navbar-left">
+  <div class="uk-navbar-left uk-navbar-toggle" id="#offcanvas">
     <!-- This is an anchor toggling the off-canvas -->
-    <a class="uk-navbar-toggle">
-      <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left" uk-toggle="target: #my-id">HOME</span>
+    <a class="uk-navbar-toggle" href="#offcanvas"></a>
+    <span class="uk-margin-small-left uk-bold" data-uk-toggle="target: #my-id"><span uk-icon="icon: menu"></span></span>
     </a>
     <!-- This is the off-canvas -->
     <div id="my-id" uk-offcanvas="flip: true">
       <div class="uk-offcanvas-bar">
 
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
         <ul class="uk-nav uk-nav-default">
-          <li class="uk-active"><a href="#">Create Event</a></li>
+          <li class="uk-active"><a href="#welcome">Create Event</a></li>
           <li class="uk-parent">
             <a href="#typeform1">Survey</a>
-          <li class="uk-active"><a href="#">Search</a></li>
           <li class="uk-parent">
-            <a href="#">Survey</a>
-            <ul class="uk-nav-sub">
-              <li><a href="#">Sub item</a></li>
-              <li><a href="#">Sub item</a></li>
-            </ul>
+            <a href="#">List</a>
+          <li class="uk-parent">
+            <a href="#">Group</a>
+          <li class="uk-parent">
+            <a href="#">Add</a>
+
+          <li class="uk-active"><a href="#">Search Event</a></li>
+          <li class="uk-parent">
+            <a href="#typeform1">Survey</a>
+            {{!-- <ul class="uk-nav-sub"></ul>
+            <ul class="uk-nav-sub"></ul> --}}
+            <ul class="uk-parent"></ul>
+            <a href="#">Group</a>
+            {{!-- <ul class="uk-nav-sub"></ul>
+            <ul class="uk-nav-sub"></ul> --}}
+            <ul class="uk-parent">
+              <a href="#Team">Team</a>
+              {{!-- <ul class="uk-nav-sub"></ul>
+              <ul class="uk-nav-sub"></ul> --}}
+              <ul class="uk-parent">
+                <a href="#">Event</a>
+                <ul class="uk-nav-sub">
+                  <ul class="uk-parent"></ul>
+                  <a href="#">Event 2</a>
+                  <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                  </ul>
+                  <div>
           </li>
           <li class="uk-nav-header">Header</li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Table</a></li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Thumbnail</a></li>
           <li class="uk-nav-divider"></li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Trash</a></li>
         </ul>
-
       </div>
     </div>
-
-    <button class="uk-offcanvas-close" type="button" uk-close></button>
-
   </div>
   </div>
   </div>
 </nav>
-<div class=" uk-height-viewport uk-background-fixed uk-overflow-hidden uk-lightr uk-flex uk-flex-middle uk-text-bold"
+<div id="welcome" class=" uk-height-viewport uk-background-fixed uk-overflow-hidden uk-lightr uk-flex uk-flex-middle uk-text-bold"
   uk-parallax="viewport: 0.5;" style="background-image: url('image/gather1.jpeg');">
-
-  <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+ 
+ <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
     <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">Welcome Friends</h1>
     <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Lorem ipsum dolor sit amet, consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
+    <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
       EVENT</button>
-     
-    <button class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">SEARCH
+
+    <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">SEARCH
       EVENT</button>
   </div>
 </div>
@@ -79,18 +100,17 @@
 </div>
 <!-- - - - - - -  This is the beginning of the typeform  Survey- - - - - -->
 
-  
-  <div id="typeform1"> 
-    <div class="typeform-widget" data-url="https://abigailjackson.typeform.com/to/QaKxbz" data-transparency="50" style="width: 100%; height: 500px;"></div>
-    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a
-        href="https://admin.typeform.com/signup?utm_campaign=QaKxbz&utm_source=typeform.com-13125475-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
-        style="color: #999" target="_blank">Typeform</a> </div>
-  </div>
-  <div>
-  <hr "uk-background-default">
+
+<div id="typeform1">
+  <div class="typeform-widget" data-url="https://abigailjackson.typeform.com/to/QaKxbz" data-transparency="50" style="width: 100%; height: 500px;"></div>
+  <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=QaKxbz&utm_source=typeform.com-13125475-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+      style="color: #999" target="_blank">Typeform</a> </div>
 </div>
-  
+<div>
+  <hr id="Team" class="uk-background-default">
+</div>
+
 <!-- - - - - - - - - - - - - - - -End of Typeform - - - - - - - - - - - --->
 
 <div class="uk-padding-large uk-background-cover-fixed uk-background-default uk-dark uk-height-xlarge uk-text-center">
@@ -108,10 +128,43 @@
     suscipit
     eveniet.</p>
   <br>
+  <br>
   <!--  - - - - - - - - - - - - - Team area - - - - - - - - - - - - - --->
-
+  <!-- Cards -->
+    <div id="Team"class="uk-child-width-1-4@m" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="image/flower.jpeg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Luis Quintero</h3>
+            <p>Hello I am Luis Quintero, I helped with desiging this website and fell I deserve all the credit for
+              doing such an exquisite job.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+    <div class="uk-child-width-1-1@m" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="image/flower.jpeg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Luis Quintero</h3>
+            <p>Hello I am Luis Quintero, I helped with desiging this website and fell I deserve all the credit for
+              doing such an exquisite job.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <br>
+    <br>
+  <!-- Slide Show -->
 </div>
-<div class="uk-background-container">
+<div id="Team" class="uk-background-container">
   <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
 
     <ul class="uk-slideshow-items">
@@ -130,57 +183,55 @@
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
       uk-slideshow-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
 
   </div>
 
-</div>
+
+
 
 <!-- - - - - - - Footer - - - - - - - - - - -->
-<footer class="uk-padding-small uk-text-center">
-  &copy; Copyright Team Git-It, All Rights Reserved 2019
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <footer class="uk-padding-small uk-text-center">
+    &copy; Copyright Team Git-It 2019
+  </footer>
 
 
 <!--  - - - -Jquery and Javascript - - - - - -->
-<script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-  crossorigin='anonymous'></script>
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+    crossorigin='anonymous'></script>
 
-<script>
-  // testing to generate secret code
+  <script>
+    // testing to generate secret code
 
-  $(".createCode").on("click", function (event) {
-    event.preventDefault();
+    $(".createCode").on("click", function (event) {
+      event.preventDefault();
 
-    function makeid() {
-      var text = "";
-      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-      for (var i = 0; i < 5; i++)
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+        for (var i = 0; i < 5; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-      return text;
-    }
+        return text;
+      }
 
-    console.log(makeid());
-  });
-</script>
+      console.log(makeid());
+    });
+    
+    // event handlers for the create and search buttons
+    function createButtonClick() {
+      window.location = "#typeform1";
+    };
+    $("#createButton").on("click", function () {
+      createButtonClick();
+    });
+    $("#searchButton").on("click", function () {
+      createButtonClick();
+    });
+
+    // test script for the gatehr effect
+
+
+
+  </script>

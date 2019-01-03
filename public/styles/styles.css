@@ -2,3 +2,15 @@
 .list-group-item {
   line-height: 2.5;
 }
+#createButton {
+  background-color: white;
+  color: #333;
+  border: 3px solid #e5e5e5;
+  border-radius: 40px;
+}
+#searchButton {
+  background-color: white;
+  color: #333;
+  border: 3px solid #e5e5e5;
+  border-radius: 40px;
+}
