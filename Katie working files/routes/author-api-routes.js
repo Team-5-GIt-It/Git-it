@@ -1,3 +1,4 @@
+// search by event
 var db = require("../models");
 
 module.exports = function(app) {
