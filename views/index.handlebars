@@ -105,13 +105,13 @@
         >Your Name: <input class="uk-input" type="text" id="hostname"
       /></label>
       <label for="Event Name"
-        >Event Name: <input type="text" id="eventname"
+        >Event Name: <input class="uk-input" type="text" id="eventname"
       /></label>
 
       <!-- Include Location Services? -->
       <h3>Basic Event Information</h3>
       <label for="Location Name"
-        >Location Address: <input type="text" id="locationaddress"
+        >Location Address: <input class="uk-input" type="text" id="locationaddress"
       /></label>
 
       <!-- Let User pick from Calendar using Moment -->
@@ -123,7 +123,7 @@
 
       <label for="Group Size"
         >How big will your party be?
-        <select id="groupsize">
+        <select class="uk-select" id="groupsize">
           <option value="small">Small (0-10)</option>
           <option value="medium">Medium (11-35)</option>
           <option value="large">Large (35-100)</option>
@@ -134,7 +134,7 @@
       <br />
       <label for="Event Type"
         >What Kind of party will you be hosting?
-        <select id="eventtype">
+        <select class="uk-select" id="eventtype">
           <option value="Potluck">Potluck</option>
           <option value="babyshower">Baby Shower</option>
           <option value="birthdayparty">Birthday Party</option>
@@ -144,7 +144,7 @@
       </label>
 
       <h3>Please include a brief event description</h3>
-      <label for="Description">Description: <textarea id="description"></textarea></label>
+      <label for="Description">Description: <textarea class="uk-textarea"id="description"></textarea></label>
 
       <button type="submit" id="submit">Submit</button>
       <button type="reset" id="reset">Reset Form</button>
