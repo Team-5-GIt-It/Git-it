@@ -99,9 +99,58 @@
   <hr "uk-background-default">
 </div>
 <!-- - - - - - -  This is the beginning of the typeform  Survey- - - - - -->
+ <form id="hostform">
+      <h3>About You</h3>
+      <label for="Host Name"
+        >Your Name: <input class="uk-input" type="text" id="hostname"
+      /></label>
+      <label for="Event Name"
+        >Event Name: <input type="text" id="eventname"
+      /></label>
 
+      <!-- Include Location Services? -->
+      <h3>Basic Event Information</h3>
+      <label for="Location Name"
+        >Location Address: <input type="text" id="locationaddress"
+      /></label>
 
-<div id="typeform1">
+      <!-- Let User pick from Calendar using Moment -->
+      <label for="Date">Date: <input type="date" id="date"/></label>
+      <label for="Time"
+        >Time // Starts at: <input type="time" id="time-start"/> Ends at:
+        <input type="time" id="time-end"
+      /></label>
+
+      <label for="Group Size"
+        >How big will your party be?
+        <select id="groupsize">
+          <option value="small">Small (0-10)</option>
+          <option value="medium">Medium (11-35)</option>
+          <option value="large">Large (35-100)</option>
+          <option value="large">Huge (101-200)</option>
+        </select>
+      </label>
+
+      <br />
+      <label for="Event Type"
+        >What Kind of party will you be hosting?
+        <select id="eventtype">
+          <option value="Potluck">Potluck</option>
+          <option value="babyshower">Baby Shower</option>
+          <option value="birthdayparty">Birthday Party</option>
+          <option value="graduationparty">Graduation Party</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
+      <h3>Please include a brief event description</h3>
+      <label for="Description">Description: <textarea id="description"></textarea></label>
+
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="reset">Reset Form</button>
+    </form>
+
+{{!-- <div id="typeform1">
   <div class="typeform-widget" data-url="https://abigailjackson.typeform.com/to/QaKxbz" data-transparency="50" style="width: 100%; height: 500px;"></div>
   <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
   <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=QaKxbz&utm_source=typeform.com-13125475-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
@@ -109,7 +158,7 @@
 </div>
 <div>
   <hr id="Team" class="uk-background-default">
-</div>
+</div> --}}
 
 <!-- - - - - - - - - - - - - - - -End of Typeform - - - - - - - - - - - --->
 
@@ -235,3 +284,53 @@
 
 
   </script>
+ 
+ {{!-- Form Functionality --}}
+   <script>
+ 
+      // Get values from form
+      $("#submit").on("click", function(event){
+          event.preventDefault();
+      
+      // Function to Generate Secret Event Code
+        function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 5; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+      }
+      // Create New Host Object
+          let newHost = {
+              name: $("#hostname").val().trim(),
+              event: $("#eventname").val().trim(),
+              location: $("#locationaddress").val().trim(),
+              date: $("#date").val().trim(),
+              timeStart : $("#time-start").val().trim(),
+              timeEnd: $("#time-end").val().trim(),
+              groupSize: $("#groupsize option:selected").val(),
+              eventType: $("#eventtype option:selected").val(),
+              description: $("#description").val().trim(),
+              eventCode: makeid(),
+          };
+          
+          console.log(newHost);
+      });
+
+      // Function to Reset Form on Reset Click
+      function resetForm () {
+        $("#hostname").val().trim(),
+             $("#eventname").val().trim(),
+             $("#locationaddress").val().trim(),
+             $("#date").val().trim(),
+               $("#time-start").val().trim(),
+               $("#time-end").val().trim(),
+            $("#groupsize option:selected").val(),
+              $("#eventtype option:selected").val(),
+              $("#description").val().trim()
+      };
+
+    
+    </script>
