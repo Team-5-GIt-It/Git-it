@@ -100,115 +100,155 @@
 </div>
 <!-- - - - - - -  This is the beginning of the typeform  Survey- - - - - -->
 
-<div class="uk-container-large uk-container ">
+ <div class="uk-container-large uk-container ">
+      <form
+        class="uk-grid-small uk-text-center"
+        id="hostform"
+        method="POSt"
+        uk-grid
+        action=""
+      >
+        <div class="uk-width-1-1@s">
+          <h3 class="uk-heading-line uk-text-center">
+            <span>Give us some information about your Gathering</span>
+          </h3>
+        </div>
 
+        <div class="uk-width-1-2@s ">
+          <label class="uk-form-label uk-form-large" for="hostname"
+            >Your Name<input
+              class="uk-input"
+              type="text"
+              id="hostname"
+              name="name"
+              required
+          /></label>
+        </div>
 
-  <form class="uk-grid-small uk-text-center" id="hostform" method="POSt" uk-grid action="">
+        <div class="uk-width-1-2@s">
+          <label class="uk-form-label uk-form-large" for="eventname"
+            >Gathering Name<input
+              class="uk-input"
+              type="text"
+              id="eventname"
+              name="eventname"
+              required
+          /></label>
+        </div>
 
-    <div class="uk-width-1-1@s">
-      <h3 class="uk-heading-line uk-text-center"><span>Give us some information about your Gathering</span></h3>
+        <!-- Include Location Services? -->
+        <div class="uk-width-1-1"><h3>--</h3></div>
+
+        <div class="uk-width-1-1"><h4>Where will you Gather?</h4></div>
+
+        <div class="uk-width-1-4">
+          <label class="uk-form-label" for="address"
+            >Address<input class="uk-input" type="text"  name="address" id="address" required
+          /></label>
+        </div>
+        <div class="uk-width-1-4">
+          <label class="uk-form-label" for="city"
+            >City<input class="uk-input" type="text"  name="city" id="city" required
+          /></label>
+        </div>
+        <div class="uk-width-1-4">
+          <label class="uk-form-label" for="state"
+            >State<input class="uk-input" type="text"  name="state" id="state" required
+          /></label>
+        </div>
+        <div class="uk-width-1-4">
+          <label class="uk-form-label" for="zip"
+            >Zip<input
+              class="uk-input"
+              type="number"
+              minlength="5"
+              maxlength="5"
+              name="zip"
+              id="zip"
+              required
+          /></label>
+        </div>
+
+        <div class="uk-width-1-1"><h4>When's it going to happen?</h4></div>
+
+        <div class="uk-width-1-3">
+          <label class="uk-form-label" for="date"
+            >Date<input class="uk-input" type="date"  name="date" id="date" required
+          /></label>
+        </div>
+        <div class="uk-width-1-3">
+          <label class="uk-form-label" for="time">
+            Starts at<input
+              class="uk-input"
+              type="time"
+              name="time-start"
+              id="time-start"
+              required
+            />
+            Ends at<input class="uk-input" type="time"  name="time-end" id="time-end" />
+          </label>
+        </div>
+
+        <div class="uk-width-1-3">
+          <label class="uk-form-label" for="groupsize"
+            >How big will your Gathering be?
+            <select class="uk-select" id="groupsize">
+              <option value="small">Small (0-10)</option>
+              <option value="medium">Medium (11-35)</option>
+              <option value="large">Large (35-100)</option>
+              <option value="large">Huge (101-200)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="uk-width-1-1">
+          <h4>What king of Gathering is this?</h4>
+
+          <select
+            class="uk-select uk-form-large uk-form-width-large"
+            id="eventtype"
+          >
+            <option value="Potluck">Potluck</option>
+            <option value="babyshower">Baby Shower</option>
+            <option value="birthdayparty">Birthday Party</option>
+            <option value="graduationparty">Graduation Party</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="uk-width-1-1">
+          <h4>Tell your guests what your Gathering is about</h4>
+        </div>
+
+        <div class="uk-width-1-1">
+          <textarea
+            class="uk-textarea uk-form-width-medium"
+            name="time-start"
+            id="description"
+            minlength="1"
+            required
+          ></textarea>
+        </div>
+
+        <hr class="uk-width-1-1" />
+
+        <div class="uk-width-1-1">
+          <button class="uk-button-default uk-button-large" id="submit">
+            Submit
+          </button>
+          <button
+            class="uk-button-secondary uk-button-large"
+            type="reset"
+            id="reset"
+          >
+            Reset Form
+          </button>
+        </div>
+      </form>
+
+     
     </div>
 
-    <div class="uk-width-1-2@s ">
-      <label class="uk-form-label uk-form-large" for="hostname">Your Name<input class="uk-input" type="text" id="hostname"
-          required /></label>
-    </div>
-
-    <div class="uk-width-1-2@s">
-      <label class="uk-form-label uk-form-large" for="eventname">Gathering Name<input class="uk-input" type="text" id="eventname"
-          required /></label>
-    </div>
-
-    <!-- Include Location Services? -->
-    <div class="uk-width-1-1">
-      <h3>--</h3>
-    </div>
-
-    <div class="uk-width-1-1">
-      <h4>Where will you Gather?</h4>
-    </div>
-
-    <div class="uk-width-1-4">
-      <label class="uk-form-label" for="address">Address<input class="uk-input" type="text" id="address" required /></label>
-    </div>
-    <div class="uk-width-1-4">
-      <label class="uk-form-label" for="city">City<input class="uk-input" type="text" id="city" required /></label>
-    </div>
-    <div class="uk-width-1-4">
-      <label class="uk-form-label" for="state">State<input class="uk-input" type="text" id="state" required /></label>
-    </div>
-    <div class="uk-width-1-4">
-      <label class="uk-form-label" for="zip">Zip<input class="uk-input" type="number" minlength="5" maxlength="5" id="zip"
-          required /></label>
-    </div>
-
-    <div class="uk-width-1-1">
-      <h4>When's it going to happen?</h4>
-    </div>
-
-    <div class="uk-width-1-3">
-      <label class="uk-form-label" for="date">Date<input class="uk-input" type="date" id="date" required /></label>
-    </div>
-    <div class="uk-width-1-3">
-      <label class="uk-form-label" for="time">
-        Starts at<input class="uk-input" type="time" id="time-start" required />
-        Ends at<input class="uk-input" type="time" id="time-end" />
-      </label>
-    </div>
-
-    <div class="uk-width-1-3">
-      <label class="uk-form-label" for="groupsize">How big will your Gathering be?
-        <select class="uk-select" id="groupsize">
-          <option value="small">Small (0-10)</option>
-          <option value="medium">Medium (11-35)</option>
-          <option value="large">Large (35-100)</option>
-          <option value="large">Huge (101-200)</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="uk-width-1-1">
-      <h4>What king of Gathering is this?</h4>
-
-      <select class="uk-select uk-form-large uk-form-width-large" id="eventtype">
-        <option value="Potluck">Potluck</option>
-        <option value="babyshower">Baby Shower</option>
-        <option value="birthdayparty">Birthday Party</option>
-        <option value="graduationparty">Graduation Party</option>
-        <option value="other">Other</option>
-      </select>
-
-    </div>
-
-    <div class="uk-width-1-1">
-      <h4>Tell your guests what your Gathering is about</h4>
-    </div>
-
-    <div class="uk-width-1-1">
-      <textarea class="uk-textarea uk-form-width-medium" id="description"></textarea>
-    </div>
-
-    <hr class="uk-width-1-1">
-
-    <div class="uk-width-1-1">
-      <button class="uk-button-default uk-button-large" type="submit" id="submit">Submit</button>
-      <button class="uk-button-secondary uk-button-large" type="reset" id="reset">Reset Form</button>
-    </div>
-
-
-  </form>
-
-</div>
-
-{{!-- <div id="typeform1">
-  <div class="typeform-widget" data-url="https://abigailjackson.typeform.com/to/QaKxbz" data-transparency="50" style="width: 100%; height: 500px;"></div>
-  <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=QaKxbz&utm_source=typeform.com-13125475-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
-      style="color: #999" target="_blank">Typeform</a> </div>
-</div>
-<div>
-  <hr id="Team" class="uk-background-default">
-</div> --}}
 
 <!-- - - - - - - - - - - - - - - -End of Typeform - - - - - - - - - - - --->
 
@@ -301,60 +341,106 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
-  {{!-- Form Functionality --}}
-  <script>
-    $("#hostform").validate();
-    // Get values from form
-    $("#submit").on("click", function (event) {
-      event.preventDefault();
-
-
-      // Function to Generate Secret Event Code
+   <script>
+      $("#testform").validate({
+          submitHandler: function(form) {
+              console.log($("#testname").val());
+          }
+      });
+ // Function to Generate Secret Event Code
       function makeid() {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+              var text = "";
+              var possible =
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-        for (var i = 0; i < 5; i++)
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
+              for (var i = 0; i < 5; i++)
+                text += possible.charAt(
+                  Math.floor(Math.random() * possible.length)
+                );
 
-        return text;
-      }
-      // Create New Host Object
-      let newHost = {
-        name: $("#hostname").val().trim(),
-        event: $("#eventname").val().trim(),
-        address: $("#address").val().trim(),
-        city: $("#city").val().trim(),
-        state: $("#state").val().trim(),
-        zip: $("#zip").val().trim(),
-        date: $("#date").val().trim(),
-        timeStart: $("#time-start").val().trim(),
-        timeEnd: $("#time-end").val().trim(),
-        groupSize: $("#groupsize option:selected").val(),
-        eventType: $("#eventtype option:selected").val(),
-        description: $("#description").val().trim(),
-        eventCode: makeid(),
-      };
+              return text;
+            };
 
-      console.log(newHost);
-    });
+      $("#hostform").validate({
+        submitHandler: function(form) {
+          // Get values from form
 
-    // Function to Reset Form on Reset Click
-    function resetForm() {
-      $("#hostname").val().trim(),
-        $("#eventname").val().trim(),
-        $("#address").val().trim(),
-        $("#city").val().trim(),
-        $("#state").val().trim(),
-        $("#zip").val().trim(),
-        $("#date").val().trim(),
-        $("#time-start").val().trim(),
-        $("#time-end").val().trim(),
-        $("#groupsize option:selected").val(),
-        $("#eventtype option:selected").val(),
-        $("#description").val().trim()
-    };
+            // Create New Host Object
+            let newHost = {
+              name: $("#hostname")
+                .val()
+                .trim(),
+              event: $("#eventname")
+                .val()
+                .trim(),
+              address: $("#address")
+                .val()
+                .trim(),
+              city: $("#city")
+                .val()
+                .trim(),
+              state: $("#state")
+                .val()
+                .trim(),
+              zip: $("#zip")
+                .val()
+                .trim(),
+              date: $("#date")
+                .val()
+                .trim(),
+              timeStart: $("#time-start")
+                .val()
+                .trim(),
+              timeEnd: $("#time-end")
+                .val()
+                .trim(),
+              groupSize: $("#groupsize option:selected").val(),
+              eventType: $("#eventtype option:selected").val(),
+              description: $("#description")
+                .val()
+                .trim(),
+              eventCode: makeid()
+            };
 
+            console.log(newHost);
+          ;
 
-  </script>
-  
+          // Function to Reset Form on Reset Click
+          function resetForm() {
+            $("#hostname")
+              .val()
+              .trim(),
+              $("#eventname")
+                .val()
+                .trim(),
+              $("#address")
+                .val()
+                .trim(),
+              $("#city")
+                .val()
+                .trim(),
+              $("#state")
+                .val()
+                .trim(),
+              $("#zip")
+                .val()
+                .trim(),
+              $("#date")
+                .val()
+                .trim(),
+              $("#time-start")
+                .val()
+                .trim(),
+              $("#time-end")
+                .val()
+                .trim(),
+              $("#groupsize option:selected").val(),
+              $("#eventtype option:selected").val(),
+              $("#description")
+                .val()
+                .trim();
+          }
+        }
+      });
+    
+    </script>
