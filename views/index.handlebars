@@ -1,120 +1,119 @@
-<!-- - - - - Navbar - - - - - - -->
-<nav class="uk-navbar uk-navbar-container  uk-padding-remove-bottom">
-  <div class="uk-navbar-left uk-navbar-toggle" id="#offcanvas">
-    <!-- This is an anchor toggling the off-canvas -->
-    <a class="uk-navbar-toggle" href="#offcanvas"></a>
-    <span class="uk-margin-small-left uk-bold" data-uk-toggle="target: #my-id"><span uk-icon="icon: menu"></span></span>
-    </a>
-    <!-- This is the off-canvas -->
-    <div id="my-id" uk-offcanvas="flip: true">
-      <div class="uk-offcanvas-bar">
+<!-- - - - - - - - - Navbar - - - - - - - - - - -->
+<nav class="uk-navbar-container-default" uk-navbar style="z-index: 980;" uk-sticky="bottom">
 
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-        <ul class="uk-nav uk-nav-default">
-          <li class="uk-active"><a href="#welcome">Create Event</a></li>
-          <li class="uk-parent">
-            <a href="#typeform1">Survey</a>
-          <li class="uk-parent">
-            <a href="#">List</a>
-          <li class="uk-parent">
-            <a href="#">Group</a>
-          <li class="uk-parent">
-            <a href="#">Add</a>
-
-          <li class="uk-active"><a href="#">Search Event</a></li>
-          <li class="uk-parent">
-            <a href="#typeform1">Survey</a>
-            {{!-- <ul class="uk-nav-sub"></ul>
-            <ul class="uk-nav-sub"></ul> --}}
-            <ul class="uk-parent"></ul>
-            <a href="#">Group</a>
-            {{!-- <ul class="uk-nav-sub"></ul>
-            <ul class="uk-nav-sub"></ul> --}}
-            <ul class="uk-parent">
-              <a href="#Team">Team</a>
-              {{!-- <ul class="uk-nav-sub"></ul>
-              <ul class="uk-nav-sub"></ul> --}}
-              <ul class="uk-parent">
-                <a href="#">Event</a>
-                <ul class="uk-nav-sub">
-                  <ul class="uk-parent"></ul>
-                  <a href="#">Event 2</a>
-                  <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
-                  </ul>
-                  <div>
-          </li>
-          <li class="uk-nav-header">Header</li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Table</a></li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Thumbnail</a></li>
-          <li class="uk-nav-divider"></li>
-          <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Trash</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  </div>
+  <!-- This is a button toggling the off-canvas -->
+  <button uk-toggle="target: #offcanvas" uk-icon="icon: menu"></button>
+  <h1 id="Logo">Gather</h1>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href=""></a></li>
+      <li class="uk-parent"><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
   </div>
 </nav>
-<div id="welcome" class=" uk-height-viewport uk-background-fixed uk-overflow-hidden uk-lightr uk-flex uk-flex-middle uk-text-bold"
-  uk-parallax="viewport: 0.5;" style="background-image: url('image/gather1.jpeg');">
- 
- <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-    <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">Welcome Friends</h1>
-    <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
-      EVENT</button>
 
-    <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">SEARCH
-      EVENT</button>
+<!-- This is the off-canvas -->
+<div id="offcanvas" uk-offcanvas="flip: true" style->
+  <div class="uk-offcanvas-bar ">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+      <li class="uk-active"><a href="#">Create Gathering</a></li>
+      <li class="uk-parent">
+        <a href="#">Survey</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#">Date</a></li>
+          <li><a href="#">Time</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Invite</a></li>
+        </ul>
+      <li class="uk-active"><a href="#">Search Gathering</a></li>
+      <li class="uk-parent">
+        <a href="#">search</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+      {{!-- <li class="uk-nav-header">Header</li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+      <li class="uk-nav-divider"></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li> --}}
+    </ul>
+  </div>
+</div>
+
+<!-- Section 1 with click event buttons -->
+
+<div id="welcome" class=" uk-height-viewport uk-background-fixed uk-overflow-hidden uk-light uk-flex uk-flex-middle uk-text-bold"
+  uk-parallax="viewport: 0.5;" style="background-image: url('image/gather1.5.jpeg');">
+  <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+    <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
+      <h1 id="gatherLogo2">Gather</h1>
+      <h2 id="gatherh2">Organize Harmonioulsy...</h2>
+      <p id="gatherP" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Lets start
+        off by making
+        sure
+        you know whether you are planning/hosting an event or simply attending one. Please click the button which best
+        suits your</p>
+      <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
+        GATHERING</button>
+
+      <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">SEARCH
+        GATHERING</button>
   </div>
 </div>
 </div>
 
-<!-- - - - - - - - start of a new section/Blur effect - - - - - - - -->
 
-<div id="test-filter" class="uk-height-large uk-background-cover u-background-fixed uk-overflow-hidden uk-flex uk-flex-top"
-  uk-parallax="sepia: 100;" style="background-image: url('image/jellyfish.jpeg');">
-  <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">Organize</h1>
+<!-- - - - - - - - Section 2/Blur effect - - - - - - - -->
+
+<div id="test-filter" class="uk-height-viewport uk-background-cover uk-background-fixed uk-overflow-hidden uk-flex uk-flex-top"
+  uk-parallax="sepia: 100;" style="background: #829F9D">
+  <div id="search">
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">
+      <h1 id="organize">Organize</h1>
+      <h2 id="organize2"> Seach your gathering by entering your event code below.</h2>
+
+  </div>
+  <nav id="searchbar2" class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+      <div class="uk-navbar-item">
+        <form class="uk-search uk-search-navbar">
+          <span uk-search-icon></span>
+          <input class="uk-search-input" uk-icon="icon: serach" type="search" placeholder="Search...">
+        </form>
+      </div>
+
+    </div>
+</div>
+</nav>
+
+
+<!-- - - - - - -  Section 3 This is the beginning of the Survey- - - - - -->
+
+<div id="welcome" class=" uk-height-viewport uk-background-fixed uk-overflow-hidden uk-lightr uk-flex uk-flex-middle uk-text-bold"
+  uk-parallax="viewport: 0.5;" style="background-image: url('image/gather2.2.jpeg');">
+  <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+    <h1 id="surveyLogo1" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
+      <h1 id="gatherLogo2">Survey</h1>
+      <h2 id="gatherh2">Structure Organically</h2>
+      <p id="gatherP" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Fill out
+        the empty spaces.
+
+  </div>
+</div>
 </div>
 
-<div class="uk-padding-large uk-background-fixed uk-background-default uk-dark uk-height-xlarge uk-text-center">
-  <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5">Hello</h1>
-  <p class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.6">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur accusamus aliquam in eligendi nam
-    necessitatibus rem, doloribus iusto quibusdam vitae reiciendis deserunt fugit. Unde delectus, saepe nesciunt minima
-    consectetur ipsam molestias! Inventore, rem fugit incidunt ut delectus amet totam dolorem similique recusandae
-    quaerat possimus, aut minus ad nihil? Quos, laborum laboriosam mollitia in repellendus sunt praesentium ipsa
-    officia alias natus est optio consectetur sequi pariatur aliquam consequuntur cumque fuga deleniti voluptate, ipsum
-    temporibus maxime? Blanditiis earum magnam maiores pariatur. Numquam atque consectetur quo obcaecati recusandae
-    quod qui debitis eligendi reiciendis asperiores molestias, repellendus, hic, ex doloribus similique autem suscipit
-    eveniet.</p>
-  <br>
-
-</div>
-<div>
-  <hr "uk-background-default">
-</div>
-<!-- - - - - - -  This is the beginning of the typeform  Survey- - - - - -->
 
 
-<div id="typeform1">
-  <div class="typeform-widget" data-url="https://abigailjackson.typeform.com/to/QaKxbz" data-transparency="50" style="width: 100%; height: 500px;"></div>
-  <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=QaKxbz&utm_source=typeform.com-13125475-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
-      style="color: #999" target="_blank">Typeform</a> </div>
-</div>
-<div>
-  <hr id="Team" class="uk-background-default">
-</div>
+<!-- - - - - - - - - - - - - - - -Section 4 Team Bio- - - - - - - - - - - --->
 
-<!-- - - - - - - - - - - - - - - -End of Typeform - - - - - - - - - - - --->
 
-<div class="uk-padding-large uk-background-cover-fixed uk-background-default uk-dark uk-height-xlarge uk-text-center">
-  <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">Team</h1>
+<div class="uk-padding-large uk-background-cover-fixed uk-background-default uk-dark uk-height-xlarge uk-text-center" style="background-color:#455052 ">
+  <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7"><h1 id="teamlogo1">Team</h1>
   <p class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.8">
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur accusamus aliquam in eligendi nam
     necessitatibus rem, doloribus iusto quibusdam vitae reiciendis deserunt fugit. Unde delectus, saepe nesciunt
@@ -127,111 +126,56 @@
     quod qui debitis eligendi reiciendis asperiores molestias, repellendus, hic, ex doloribus similique autem
     suscipit
     eveniet.</p>
-  <br>
-  <br>
-  <!--  - - - - - - - - - - - - - Team area - - - - - - - - - - - - - --->
-  <!-- Cards -->
-    <div id="Team"class="uk-child-width-1-4@m" uk-grid>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="image/flower.jpeg" alt="">
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Luis Quintero</h3>
-            <p>Hello I am Luis Quintero, I helped with desiging this website and fell I deserve all the credit for
-              doing such an exquisite job.</p>
-          </div>
-        </div>
-      </div>
-      <br>
-    <div class="uk-child-width-1-1@m" uk-grid>
-      <div>
-        <div class="uk-card uk-card-default">
-          <div class="uk-card-media-top">
-            <img src="image/flower.jpeg" alt="">
-          </div>
-          <div class="uk-card-body">
-            <h3 class="uk-card-title">Luis Quintero</h3>
-            <p>Hello I am Luis Quintero, I helped with desiging this website and fell I deserve all the credit for
-              doing such an exquisite job.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <br>
-    <br>
-  <!-- Slide Show -->
 </div>
-<div id="Team" class="uk-background-container">
-  <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
 
-    <ul class="uk-slideshow-items">
-      <li>
-        <img data-src="image/party.jpeg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-      </li>
-      <li>
-        <img data-src="image/jellyfish.jpeg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-      </li>
-      <li>
-        <img data-src="image/flower.jpeg" width="1800" height="1200" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
-      </li>
 
-    </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-      uk-slideshow-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    
-
-  </div>
 
 
 
 
 <!-- - - - - - - Footer - - - - - - - - - - -->
-  <footer class="uk-padding-small uk-text-center">
-    &copy; Copyright Team Git-It 2019
-  </footer>
+<footer class="uk-padding-small uk-text-center">
+  &copy; Copyright Team Git-It 2019
+</footer>
 
 
 <!--  - - - -Jquery and Javascript - - - - - -->
-  <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-    crossorigin='anonymous'></script>
+<script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+  crossorigin='anonymous'></script>
 
-  <script>
-    // testing to generate secret code
+<script>
+  // testing to generate secret code
 
-    $(".createCode").on("click", function (event) {
-      event.preventDefault();
+  $(".createCode").on("click", function (event) {
+    event.preventDefault();
 
-      function makeid() {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    function makeid() {
+      var text = "";
+      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-        for (var i = 0; i < 5; i++)
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
+      for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-        return text;
-      }
+      return text;
+    }
 
-      console.log(makeid());
-    });
-    
-    // event handlers for the create and search buttons
-    function createButtonClick() {
-      window.location = "#typeform1";
-    };
-    $("#createButton").on("click", function () {
-      createButtonClick();
-    });
-    $("#searchButton").on("click", function () {
-      createButtonClick();
-    });
+    console.log(makeid());
+  });
+
+  // event handlers for the create and search buttons
+  function createButtonClick() {
+    window.location = "#Survey";
+  };
+  $("#createButton").on("click", function () {
+    createButtonClick();
+  });
+  $("#searchButton").on("click", function () {
+    createButtonClick();
+  });
 
     // test script for the gatehr effect
 
 
 
-  </script>
+</script>
