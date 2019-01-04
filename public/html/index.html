@@ -2,48 +2,410 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
     <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
-    
+    <!-- Google Font Api -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+    <!-- UIkit Icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+    <title><strong>Gather</strong></title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="image/icons8-lotus-filled-30.png" />
+
 </head>
 
 <body>
-    <h1>Welcome to the Party Planning Committee!</h1>
-    <h2>Are you a Guest or a Host?</h2>
-    <a href=""><button>Guest</button></a> <a href="./host-survey.html"><button>Host</button></a> <button class="createCode">Secret
-        Code</button>
-        
+    <!-- - - - - - - - -  - - - - - - Navbar - - - - - - - - - - - - - - - - - - -->
 
+<nav class="uk-navbar-container-default" uk-navbar style="z-index: 980;" uk-sticky="bottom">
 
-
-
-
-
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        <!--  - - - - - - This is a button toggling the off-canvas  - - - - - - - --->
+        <button uk-toggle="target: #offcanvas" uk-icon="icon: menu"></button>
+        <h1 id="navLogo">Gather</h1>
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href=""></a></li>
+            <li class="uk-parent"><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      
+        <!-- - - - - - - - - - - This is the off-canvas - - - - - - - - - - - - - -  -->
+        <div id="offcanvas" uk-offcanvas="flip: true" style->
+          <div class="uk-offcanvas-bar ">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+              <li class="uk-active"><a href="#">Create Gathering</a></li>
+              <li class="uk-parent">
+                <a href="#survey">Survey</a>
+                <!-- <ul class="uk-nav-sub">
+                  <li><a href="#">Date</a></li>
+                  <li><a href="#">Time</a></li>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">Invite</a></li> -->
+                </ul>
+              <li class="uk-active"><a href="#">Search Gathering</a></li>
+              <li class="uk-parent">
+                <a href="#">search</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              {{!-- <li class="uk-nav-header">Header</li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li> --}}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+      
+      <!--  - - - - - - - - - Section 1/ Create and Search Buttons - - - - - - - -  -->
+      
+      <div id="welcome" class=" uk-height-viewport uk-background-fixed uk-background-cover  uk-background-center-left uk-overflow-hidden uk-light uk-flex uk-flex-middle uk-text-bold"
+        uk-parallax="viewport: 0.5;" style="background-image: url('image/gather1.5.jpeg');">
+        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+          <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
+            <h1 id="gatherLogoBig">Gather</h1>
+            <h2 id="section1H2">Organize Harmoniously...</h2>
+            <p id="section1P" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Lets
+              start
+              off by making
+              sure
+              you know whether you are planning/hosting an event or simply attending one. Please click the button which best
+              suits you</p>
+            <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
+              GATHERING</button>
+      
+            <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">SEARCH
+              GATHERING</button>
+        </div>
+      </div>
+      </div>
+      
+      <!-- - - - - - - -  - - - - - - Section 2/Blur effect - - - - - - - - - - - -->
+      
+      <div id="test-filter" class="uk-height-viewport uk-background-cover uk-background-fixed  uk-overflow-hidden uk-flex uk-flex-top"
+        uk-parallax="sepia: 100;" style="background: #829F9D">
+        <div id="blur">
+          <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">
+            <h1 id="organize">Organize</h1>
+            <h2 id="section2H2"> Seach your gathering by entering your event code below.</h2>
+      
+        </div>
+        <nav id="searchbar" class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
+      
+            <div class="uk-navbar-item">
+              <form class="uk-search uk-search-navbar">
+                <span uk-search-icon></span>
+                <input class="uk-search-input" uk-icon="icon: serach" type="search" placeholder="Search...">
+              </form>
+            </div>
+      
+          </div>
+      </div>
+      </nav>
+      
+      
+      <!-- - - - - - -  - - - - - - -  Section 3/ Survey - - - - - - - - -  - - - - -->
+      
+      
+      <div id="welcome" class=" uk-height-viewport uk-background-center-left uk-background-fixed uk-background-norepeat uk-overflow-hidden uk-lightr uk-flex uk-flex-middle uk-text-bold"
+        uk-parallax="viewport: 0.5;" style="background-image: url('image/gather2.2.jpeg');">
+        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+          <h1 id="surveyLogo1" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
+            <h1 id="survey">Survey</h1>
+            <h2 id="section3H2">Structure Organically</h2>
+            <p id="gatherP1" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Fill out
+              the empty spaces.</p>
+            <div class="uk-container-large uk-container ">
+              <form class="uk-grid-small uk-text-center" id="hostform" method="POSt" uk-grid action="">
+                <div class="uk-width-1-1@s">
+                  <h3 class="uk-heading-line uk-text-center">
+                    <span>Give us some information about your Gathering</span>
+                  </h3>
+                </div>
+      
+                <div class="uk-width-1-2@s ">
+                  <label class="uk-form-label uk-form-large" for="hostname">Your Name<input class="uk-input" type="text" id="hostname"
+                      name="name" required /></label>
+                </div>
+      
+                <div class="uk-width-1-2@s">
+                  <label class="uk-form-label uk-form-large" for="eventname">Gathering Name<input class="uk-input" type="text"
+                      id="eventname" name="eventname" required /></label>
+                </div>
+      
+                <!-- Include Location Services? -->
+                <div class="uk-width-1-1">
+                  <h3>--</h3>
+                </div>
+      
+                <div class="uk-width-1-1">
+                  <h4>Where will you Gather?</h4>
+                </div>
+      
+                <div class="uk-width-1-4">
+                  <label class="uk-form-label" for="address">Address<input class="uk-input" type="text" name="address" id="address"
+                      required /></label>
+                </div>
+                <div class="uk-width-1-4">
+                  <label class="uk-form-label" for="city">City<input class="uk-input" type="text" name="city" id="city"
+                      required /></label>
+                </div>
+                <div class="uk-width-1-4">
+                  <label class="uk-form-label" for="state">State<input class="uk-input" type="text" name="state" id="state"
+                      required /></label>
+                </div>
+                <div class="uk-width-1-4">
+                  <label class="uk-form-label" for="zip">Zip<input class="uk-input" type="number" minlength="5" maxlength="5"
+                      name="zip" id="zip" required /></label>
+                </div>
+      
+                <div class="uk-width-1-1">
+                  <h4>When's it going to happen?</h4>
+                </div>
+      
+                <div class="uk-width-1-3">
+                  <label class="uk-form-label" for="date">Date<input class="uk-input" type="date" name="date" id="date"
+                      required /></label>
+                </div>
+                <div class="uk-width-1-3">
+                  <label class="uk-form-label" for="time">
+                    Starts at<input class="uk-input" type="time" name="time-start" id="time-start" required />
+                    Ends at<input class="uk-input" type="time" name="time-end" id="time-end" />
+                  </label>
+                </div>
+      
+                <div class="uk-width-1-3">
+                  <label class="uk-form-label" for="groupsize">How big will your Gathering be?
+                    <select class="uk-select" id="groupsize">
+                      <option value="small">Small (0-10)</option>
+                      <option value="medium">Medium (11-35)</option>
+                      <option value="large">Large (35-100)</option>
+                      <option value="large">Huge (101-200)</option>
+                    </select>
+                  </label>
+                </div>
+      
+                <div class="uk-width-1-1">
+                  <h4>What king of Gathering is this?</h4>
+      
+                  <select class="uk-select uk-form-large uk-form-width-large" id="eventtype">
+                    <option value="Potluck">Potluck</option>
+                    <option value="babyshower">Baby Shower</option>
+                    <option value="birthdayparty">Birthday Party</option>
+                    <option value="graduationparty">Graduation Party</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+      
+                <div class="uk-width-1-1">
+                  <h4>Tell your guests what your Gathering is about</h4>
+                </div>
+      
+                <div class="uk-width-1-1">
+                  <textarea class="uk-textarea uk-form-width-medium" name="time-start" id="description" minlength="1"
+                    required></textarea>
+                </div>
+      
+                <hr class="uk-width-1-1" />
+      
+                <div class="uk-width-1-1">
+                  <button class="uk-button-default uk-button-large" id="submit">
+                    Submit
+                  </button>
+                  <button class="uk-button-secondary uk-button-large" type="reset" id="reset">
+                    Reset Form
+                  </button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- - - - - - - - - - - - - - - -Section 4 Team Bio- - - - - - - - - - - --->
+      
+      
+      <div class="uk-padding-large uk-background-cover-fixed uk-background-default uk-dark uk-height-xlarge uk-text-center"
+        style="background-color:#455052 ">
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">
+          <h1 id="teamlogo1">Team</h1>
+          <p id="gatherP2" class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.8">
+            Hello fellow gatherer's. Our team has been working diligently to bring you a streamlined web application that
+            makes planning an event soothing,
+            intuitive and stress free. We believe that time is precious and that it should be spent having fun with the
+            people you care most about and not on tedious
+            tasks. The Gather team hopes that you will find the experience of interacting with our site as pleasant as the
+            one you are about to embark on.
+            Check out our bio section below to find out more about the people who put this together. Lastly, dont just meet ,
+            <a id="littleLogo">Gather</a>.
+          </p>
+      </div>
+      
+      
+      <!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
+      
+      <footer class="uk-padding-small uk-text-center">
+        &copy; Copyright Team Git-It 2019
+      </footer>
+      
+      
+      
+      
+      
+      
+      <!-- //////////////////////Jquery and Javascript\\\\\\\\\\\\\\\\\ -->
+      
+      <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
-   
-   <script>
-        // testing to generate secret code
-
-        $(".createCode").on("click", function (event) {
-            event.preventDefault();
-
-            function makeid() {
-                var text = "";
-                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-                for (var i = 0; i < 5; i++)
-                    text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-                return text;
-            }
-
-            console.log(makeid());
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+      
+      <script>
+        $("#testform").validate({
+          submitHandler: function (form) {
+            console.log($("#testname").val());
+          }
         });
-    </script>
+        // Function to Generate Secret Event Code
+        function makeid() {
+          var text = "";
+          var possible =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+          for (var i = 0; i < 5; i++)
+            text += possible.charAt(
+              Math.floor(Math.random() * possible.length)
+            );
+          return text;
+        };
+        $("#hostform").validate({
+          submitHandler: function (form) {
+            // Get values from form
+            // Create New Host Object
+            let newHost = {
+              name: $("#hostname")
+                .val()
+                .trim(),
+              event: $("#eventname")
+                .val()
+                .trim(),
+              address: $("#address")
+                .val()
+                .trim(),
+              city: $("#city")
+                .val()
+                .trim(),
+              state: $("#state")
+                .val()
+                .trim(),
+              zip: $("#zip")
+                .val()
+                .trim(),
+              date: $("#date")
+                .val()
+                .trim(),
+              timeStart: $("#time-start")
+                .val()
+                .trim(),
+              timeEnd: $("#time-end")
+                .val()
+                .trim(),
+              groupSize: $("#groupsize option:selected").val(),
+              eventType: $("#eventtype option:selected").val(),
+              description: $("#description")
+                .val()
+                .trim(),
+              eventCode: makeid()
+            };
+            console.log(newHost);
+            ;
+            // Function to Reset Form on Reset Click
+            function resetForm() {
+              $("#hostname")
+                .val()
+                .trim(),
+                $("#eventname")
+                  .val()
+                  .trim(),
+                $("#address")
+                  .val()
+                  .trim(),
+                $("#city")
+                  .val()
+                  .trim(),
+                $("#state")
+                  .val()
+                  .trim(),
+                $("#zip")
+                  .val()
+                  .trim(),
+                $("#date")
+                  .val()
+                  .trim(),
+                $("#time-start")
+                  .val()
+                  .trim(),
+                $("#time-end")
+                  .val()
+                  .trim(),
+                $("#groupsize option:selected").val(),
+                $("#eventtype option:selected").val(),
+                $("#description")
+                  .val()
+                  .trim();
+            }
+          }
+        });
+      
+      /////// Event handlers for the create and search buttons\\\\\\\\\
+          function createButtonClick() {
+          window.location = "#Survey";
+        };
+        $("#createButton").on("click", function () {
+          createButtonClick();
+        });
+        $("#searchButton").on("click", function () {
+          createButtonClick();
+        });
+      
+      
+        // testing to generate secret code
+      
+        $(".createCode").on("click", function (event) {
+          event.preventDefault();
+      
+          function makeid() {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      
+            for (var i = 0; i < 5; i++)
+              text += possible.charAt(Math.floor(Math.random() * possible.length));
+      
+            return text;
+          }
+      
+          console.log(makeid());
+        });
+      
+      
+      </script>
 
 </body>
 
