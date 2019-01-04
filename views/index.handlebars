@@ -110,11 +110,11 @@
     </div>
 
     <div class="uk-width-1-2@s ">
-      <label class="uk-form-label" for="Host Name">Your Name: <input class="uk-input" type="text" id="hostname" /></label>
+      <label class="uk-form-label uk-form-large" for="Host Name">Your Name<input class="uk-input" type="text" id="hostname" /></label>
     </div>
 
     <div class="uk-width-1-2@s">
-      <label class="uk-form-label" for="Event Name">Gathering Name: <input class="uk-input" type="text" id="eventname" /></label>
+      <label class="uk-form-label uk-form-large" for="Event Name">Gathering Name<input class="uk-input" type="text" id="eventname" /></label>
     </div>
 
     <!-- Include Location Services? -->
@@ -127,16 +127,16 @@
     </div>
 
     <div class="uk-width-1-4">
-      <label class="uk-form-label" for="Location Address">Address: <input class="uk-input" type="text" id="address" /></label>
+      <label class="uk-form-label" for="Location Address">Address<input class="uk-input" type="text" id="address" /></label>
     </div>
     <div class="uk-width-1-4">
-      <label class="uk-form-label" for="Location City">City: <input class="uk-input" type="text" id="city" /></label>
+      <label class="uk-form-label" for="Location City">City<input class="uk-input" type="text" id="city" /></label>
     </div>
     <div class="uk-width-1-4">
-      <label class="uk-form-label" for="Location State">State: <input class="uk-input" type="text" id="state" /></label>
+      <label class="uk-form-label" for="Location State">State<input class="uk-input" type="text" id="state" /></label>
     </div>
     <div class="uk-width-1-4">
-      <label class="uk-form-label" for="Location Zip">Zip: <input class="uk-input" type="number" id="zip" /></label>
+      <label class="uk-form-label" for="Location Zip">Zip<input class="uk-input" type="number" id="zip" /></label>
     </div>
 
     <div class="uk-width-1-1">
@@ -144,12 +144,13 @@
     </div>
 
     <div class="uk-width-1-3">
-      <label class="uk-form-label" for="Date">Date: <input class="uk-input" type="date" id="date" /></label>
+      <label class="uk-form-label" for="Date">Date<input class="uk-input" type="date" id="date" /></label>
     </div>
     <div class="uk-width-1-3">
-      <label class="uk-form-label" for="Time">Starts at: <input class="uk-input" type="time" id="time-start" /> Ends
-        at:
-        <input class="uk-input" type="time" id="time-end" /></label>
+      <label class="uk-form-label" for="Time">
+      Starts at<input class="uk-input" type="time" id="time-start"/>
+      Ends at<input class="uk-input" type="time" id="time-end"/>
+      </label>
     </div>
 
     <div class="uk-width-1-3">
@@ -163,12 +164,10 @@
       </label>
     </div>
 
-    <br />
-
     <div class="uk-width-1-1">
       <h4>What king of Gathering is this?</h4>
 
-      <select class="uk-select" id="eventtype">
+      <select class="uk-select uk-form-large uk-form-width-large" id="eventtype">
         <option value="Potluck">Potluck</option>
         <option value="babyshower">Baby Shower</option>
         <option value="birthdayparty">Birthday Party</option>
@@ -179,16 +178,16 @@
     </div>
 
     <div class="uk-width-1-1">
-      <h4>Describe what your Gathering is about:</h4>
+      <h4>Tell your guests what your Gathering is about</h4>
     </div>
 
-    <div class="uk-width-1-2">
-      <label fclass="uk-form-label" or="Description">Description: <textarea class="uk-textarea" id="description"></textarea></label>
+    <div class="uk-width-1-1">
+    <textarea class="uk-textarea uk-form-width-medium" id="description"></textarea>
     </div>
 
     <hr class="uk-width-1-1">
 
-    <div class="uk-width-1-4">
+    <div class="uk-width-1-1">
       <button class="uk-button-default uk-button-large" type="submit" id="submit">Submit</button>
       <button class="uk-button-secondary uk-button-large" type="reset" id="reset">Reset Form</button>
     </div>
