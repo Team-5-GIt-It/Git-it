@@ -19,7 +19,7 @@
       <button class="uk-offcanvas-close" type="button" uk-close></button>
       <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
         <span id="homeIcon"></span>
-        {{!-- <li class="uk-active" ><a href="#" uk-icon="home">Home</a></li>
+        {{!-- <li class="uk-active"><a href="#" uk-icon="home">Home</a></li>
         <li class="uk-parent"> --}}
         <li class="uk-active"><a href="#" uk-icon="pencil">Create Gathering</a></li>
         <li class="uk-parent">
@@ -67,12 +67,9 @@
     <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
       <h1 id="gatherLogoBig">Gather</h1>
       <h2 id="section1H2">Organize Harmoniously...</h2>
-      <p id="section1P" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Lets
-        start
-        off by making
-        sure
-        you know whether you are planning/hosting an event or simply attending one. Please click the button which best
-        suits you</p>
+      <p id="section1P" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Let us
+        start off our fun and collaborative experience by selecting from the buttons below which 
+        suit you best. If you plan to host and event, click the Create Gathering button. If you are a guest and are attending please click the Search Gathering button. </p>
       <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.2;">CREATE
         GATHERING</button>
 
@@ -82,7 +79,7 @@
 </div>
 </div>
 
-<!-- - - - - - - -  - - - - - - Section 2/Blur effect - - - - - - - - - - - -->
+<!-- - - - - - - -  - - - - - - Section 2/ Search and Blur effect - - - - - - - - - - - -->
 
 <div id="test-filter" class="uk-height-viewport uk-background-cover uk-background-fixed  uk-overflow-hidden uk-flex uk-flex-top"
   uk-parallax="sepia: 100;" style="background: #829F9D">
@@ -95,10 +92,10 @@
   <nav id="searchbar" class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
 
-      <div class="uk-navbar-item">
+      <div class="uk-navbar-item uk-bottom-center">
         <form class="uk-search uk-search-navbar">
           <span uk-search-icon></span>
-          <input class="uk-search-input" uk-icon="icon: serach" type="search" placeholder="Search...">
+          <input class="uk-search-input" type="search" placeholder="Search...">
         </form>
       </div>
 
@@ -116,14 +113,15 @@
     <h1 id="surveyLogo1" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
       <h1 id="survey">Survey</h1>
       {{!-- <h2 id="section3h2">Structure Organically</h2> --}}
-      {{!-- <p id="section3p" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Fill out
+      {{!-- <p id="section3p" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party!
+        Fill out
         the empty spaces.</p> --}}
-      
+
       <div class="uk-container-large uk-container ">
         <form class="uk-grid-small uk-text-center" id="hostform" method="POSt" uk-grid action="">
           <div class="uk-width-1-1@s">
             <h3 class="uk-heading-line uk-text-center">
-              <span> Give us some information about your Gathering </span>
+              <span> Give us some information about your Gathering. </span>
             </h3>
           </div>
 
@@ -139,7 +137,7 @@
 
           <!-- Include Location Services? -->
           <div class="uk-width-1-1">
-            <h3>--</h3>
+            {{!-- <h3>--</h3> --}}
           </div>
 
           <div class="uk-width-1-1">
@@ -210,7 +208,8 @@
               required></textarea>
           </div>
 
-          {{!-- <hr class="uk-width-1-1" /> --}}
+          {{!--
+          <hr class="uk-width-1-1" /> --}}
 
           <div class="uk-width-1-1">
             <button class="uk-button-default uk-button-large" id="submit">
@@ -243,6 +242,149 @@
       Check out our bio section below to find out more about the people who put this together. Lastly, dont just meet ,
       <a id="littleLogo">Gather</a>.
     </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="uk-child-width-1-4@m"  uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+      <div class="uk-card uk-card-default uk-card-body">
+        <div class="uk-card-header">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <img class="uk-border-circle" width="110" height="40" src="image/teamPic/abigail.svg">
+            </div>
+            <div class="uk-width-expand">
+              <h3 class="uk-card-title uk-margin-remove-bottom">Abigail</h3>
+              <p class="uk-text-meta uk-text-center uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack
+                  Developer</time></p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="uk-card-footer">
+          <ul class="uk-iconnav">
+            <li><a href="#">
+                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
+                  width="35px">
+              </a></li>
+            <li><a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
+                  width="35px">
+              </a></li>
+            <li><a href="#">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="110" height="40" src="image/teamPic/katie1.png">
+              </div>
+              <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Katie</h3>
+                <p class="uk-text-meta uk-text-center uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack
+                    Developer</time></p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+          <div class="uk-card-footer">
+            <ul class="uk-iconnav">
+              <li><a href="#">
+                  <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="110" height="40" src="image/teamPic/luis.png">
+              </div>
+              <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Luis</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack Developer</time></p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+          <div class="uk-card-footer">
+            <ul class="uk-iconnav">
+              <li><a href="#">
+                  <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="110" height="40" src="image/teamPic/pearl.png">
+              </div>
+              <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">Pearl</h3>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack Developer</time></p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+          <div class="uk-card-footer">
+            <ul class="uk-iconnav">
+              <li><a href="#">
+                  <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
+                    width="35px">
+                </a></li>
+              <li><a href="#">
+                  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
 </div>
 
 
@@ -360,15 +502,18 @@
     }
   });
 
-/////// Event handlers for the create and search buttons\\\\\\\\\
-    function createButtonClick() {
+  /////// Event handlers for the create and search buttons\\\\\\\\\
+  function createButtonClick() {
     window.location = "#Survey";
   };
+  function searchButtonClick() {
+    window.location = "#blur"
+  }
   $("#createButton").on("click", function () {
     createButtonClick();
   });
   $("#searchButton").on("click", function () {
-    createButtonClick();
+   searchButtonClick();
   });
 
 

@@ -53,6 +53,8 @@ h1#gatherLogoBig {
 }
 
 #section1P {
+  color: white;
+  font-weight: 100;
   font-family: 'Assistant', sans-serif;
   margin-left: 1em;
 }
@@ -110,8 +112,12 @@ span {
 }
 input {
   border-radius: 4em;
-
 }
+ h4 {
+   font-family: 
+   'Aleo',serif;
+   }
+ }
 #submit{
   margin-top: 30px;
   margin-bottom: 50px;
@@ -133,7 +139,7 @@ input {
 
 /*======================= Section 4 | Team |==================*/
 #team {
-  margin-top: 100px;
+  margin-top: 85px;
   margin-left: 05px;
   color: white;
   font-size: 6em;
@@ -141,6 +147,7 @@ input {
  
 }
 #section4p {
+ 
   color: white;
   font-family: 'Assistant', sans-serif;
 }
