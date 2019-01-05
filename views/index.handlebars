@@ -202,17 +202,37 @@
         </div>
 
         <div class="uk-width-1-1">
-          <h4>What king of Gathering is this?</h4>
+          <h4>What kind of Gathering is this?</h4>
 
           <select
             class="uk-select uk-form-large uk-form-width-large"
             id="eventtype"
           >
-            <option value="Potluck">Potluck</option>
+            <option value="potluck">Potluck</option>
             <option value="babyshower">Baby Shower</option>
             <option value="birthdayparty">Birthday Party</option>
             <option value="graduationparty">Graduation Party</option>
             <option value="other">Other</option>
+          </select>
+        </div>
+
+         <div class="uk-width-1-1">
+          <h4>Any special attire?</h4>
+
+          <select
+            class="uk-select uk-form-large uk-form-width-large"
+            id="attire"
+          >
+            <option value="casual">Casual</option>
+            <option value="nightout">Night Out</option>
+            <option value="businesscasual">Business Casual</option>
+            <option value="business">Business</option>
+            <option value="semiformal">Semi-Formal</option>
+            <option value="formal">Formal</option>
+            <option value="costume">Costume</option>
+            <option value="team">Team Attire</option>
+            <option value="uniform">Uniform</option>
+            <option value="nopreference">No Preference / Other</option>
           </select>
         </div>
 
@@ -396,6 +416,7 @@
                 .trim(),
               groupSize: $("#groupsize option:selected").val(),
               eventType: $("#eventtype option:selected").val(),
+              attire: $("#attire option:selected").val(),
               description: $("#description")
                 .val()
                 .trim(),
@@ -436,6 +457,7 @@
                 .trim(),
               $("#groupsize option:selected").val(),
               $("#eventtype option:selected").val(),
+               $("#attire option:selected").val(),
               $("#description")
                 .val()
                 .trim();
