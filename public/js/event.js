@@ -55,15 +55,15 @@
             };
 
             console.log(newHost);
-            $.ajax("/api/events", {
-                type: "POST",
-                data: newHost
-            }).then(
-                function() {
-                    console.log("New event posted!");
-                    location.reload();
-                }
-            )
+            // $.ajax("/api/events", {
+            //     type: "POST",
+            //     data: newHost
+            // }).then(
+            //     function() {
+            //         console.log("New event posted!");
+            //         location.reload();
+            //     }
+            // )
           
           ;
 
