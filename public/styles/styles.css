@@ -110,14 +110,15 @@ h1#gatherLogoBig {
 span {
   font-family: 'Aleo',serif;
 }
-input {
+#hostname {
   border-radius: 4em;
 }
- h4 {
+ #section3h4 {
+   margin-top:30px;
    font-family: 
    'Aleo',serif;
    }
- }
+
 #submit{
   margin-top: 30px;
   margin-bottom: 50px;
