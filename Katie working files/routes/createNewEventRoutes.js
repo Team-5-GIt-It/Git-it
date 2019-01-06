@@ -4,62 +4,62 @@ module.exports = function(app) {
 
 // get route for all events
   app.get("/api/events/", function(req, res) {
-    db.NewEvent.findAll({})
-      .then(function(dbNewEvent) {
-        res.json(dbNewEvent);
+    db.CreateNewEvent.findAll({})
+      .then(function(dbCreateNewEvent) {
+        res.json(dbCreateNewEvent);
       });
   });
 
   // Get route for retrieving a single post
   app.get("/api/events/:id", function(req, res) {
-    db.NewEvent.findOne({
+    db.CreateNewEvent.findOne({
       where: {
         id: req.params.id
       }
     })
-      .then(function(dbNewEvent) {
-        res.json(dbNewEvent);
+      .then(function(dbCreateNewEvent) {
+        res.json(dbCreateNewEvent);
       });
   });
 
   // POST route for saving a new event
   app.post("/api/events", function(req, res) {
     console.log(req.body);
-    db.NewEvent.create({
-      event name: req.body.eventname,
-      host name: req.body.hostname,
+    db.CreateNewEvent.create({
+      event_name: req.body.event_name,
+      host_name: req.body.host_name,
       date: req.body.date,
       time: req.body.time,
       location: req.body.location,
       details: req.body.details
     })
-      .then(function(dbNewEvent) {
-        res.json(dbNewEvent);
+      .then(function(dbCreateNewEvent) {
+        res.json(dbCreateNewEvent);
       });
   });
 
   // DELETE route for deleting events
   app.delete("/api/events/:id", function(req, res) {
-    db.NewEvent.destroy({
+    db.CreateNewEvent.destroy({
       where: {
         id: req.params.id
       }
     })
-      .then(function(dbNewEvent) {
-        res.json(dbNewEvent);
+      .then(function(dbCreateNewEvent) {
+        res.json(dbCreateNewEvent);
       });
   });
 
   // PUT route for updating events
   app.put("/api/events", function(req, res) {
-    db.NewEvent.update(req.body,
+    db.CreateNewEvent.update(req.body,
       {
         where: {
           id: req.body.id
         }
       })
-      .then(function(dbNewEvent) {
-        res.json(dbNewEvent);
+      .then(function(dbCreateNewEvent) {
+        res.json(dbCreateNewEvent);
       });
   });
 };
