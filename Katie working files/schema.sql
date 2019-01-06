@@ -1,5 +1,3 @@
--- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS party;
--- Creates the "blogger" database --
-CREATE DATABASE party
-;
+DROP DATABASE IF EXISTS parties;
+
+CREATE DATABASE parties;
