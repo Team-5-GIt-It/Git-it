@@ -10,6 +10,6 @@ module.exports = function(sequelize, DataTypes) {
       });
     };
   
-    return Search;
+    return SearchEvent;
   };
   
