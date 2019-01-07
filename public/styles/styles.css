@@ -1,16 +1,163 @@
+/*===================== Navagation Bar ===========================*/
+nav {
+  background: white;
+  box-shadow: 1px 14px 20px -4px rgba(148, 145, 148, 1);
+}
 
-.list-group-item {
-  line-height: 2.5;
+svg {
+  margin-top: 5px;
+  margin-left: 40px;
+  border: #333;
+  background: transparent
 }
+
+#navLogo {
+  color: black;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+#homeIcon {
+  margin-left: 10px;
+}
+
+/*========== Section 1 |Create and Search Buttons| =============*/
+
+h1#gatherLogoBig {
+  color: white: margin-top: 400px;
+  margin-left: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+}
+
 #createButton {
+  margin-top: 30px;
   background-color: white;
   color: #333;
   border: 3px solid #e5e5e5;
   border-radius: 40px;
 }
+
 #searchButton {
+  margin-top: 30px;
   background-color: white;
   color: #333;
   border: 3px solid #e5e5e5;
   border-radius: 40px;
+}
+
+#section1H2 {
+  font-family: 'Aleo', serif;
+  margin-left: 1em;
+}
+
+#section1P {
+  color: white;
+  font-weight: 100;
+  font-family: 'Assistant', sans-serif;
+  margin-left: 1em;
+}
+
+/*======================= Section 2 |Blur effect| =============*/
+#organize {
+  color: white;
+  font-size: 5em;
+  font-family: 'Pacifico', cursive;
+  margin-top: 150px;
+  margin-left: 75px;
+}
+
+#section2H2 {
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 75px;
+  margin-left: -1em;
+}
+
+#searchbar {
+  margin-top: 500px;
+  margin-left: -35%;
+  border-radius: 60px;
+}
+
+#blur {
+  margin-top: 100px;
+  margin-left: 35%;
+}
+
+/*======================= Section 3  |Survey| ==================*/
+
+#survey {
+  color: black;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+}
+
+/* #section3h2 {
+  color: black;
+  font-family: 'Aleo', serif;
+}
+
+#section3p{
+  color: black;
+  font-family: 'Assistant', sans-serif;
+} */
+span {
+  font-family: 'Aleo',serif;
+}
+#hostname {
+  border-radius: 4em;
+}
+ #section3h4 {
+   margin-top:30px;
+   font-family: 
+   'Aleo',serif;
+   }
+
+#submit{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: white;
+  color: #333;
+  border: 3px solid #e5e5e5;
+  border-radius: 40px;
+
+}
+#reset {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: black;
+  color:white;
+  border: 3px solid #e5e5e5;
+  border-radius: 40px;
+
+}
+
+/*======================= Section 4 | Team |==================*/
+#team {
+  margin-top: 85px;
+  margin-left: 05px;
+  color: white;
+  font-size: 6em;
+  font-family: 'Pacifico', cursive;
+ 
+}
+#section4p {
+ 
+  color: white;
+  font-family: 'Assistant', sans-serif;
+}
+#littleLogo {
+  font-family: 'Pacifico', cursive;
+}
+
+
+/*======================= Footer ==================*/
+footer {
+  font-family: 'Aleo', serif;
 }
