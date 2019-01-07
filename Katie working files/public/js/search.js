@@ -20,7 +20,7 @@ $(document).ready(function() {
     var detailsInput = $("details");
     var eventForm = $("form");
 
-    // not sure how these factor into our app
+// not sure how these factor into our app
     var postCategorySelect = $("#category");
     // Giving the postCategorySelect a default value
     postCategorySelect.val("Personal");
@@ -46,7 +46,7 @@ $(document).ready(function() {
       // If we're updating a post run updateEvent to update an event
       // Otherwise run submitEvent to create a whole new event
       if (updating) {
-        newEvent.id = EventId;
+        newEvent.id = eventId;
         updateEvent(newEvent);
       }
       else {

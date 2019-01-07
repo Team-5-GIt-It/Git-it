@@ -8,15 +8,15 @@ $(document).ready(function() {
   
 //not sure this section is applicable to our app
     // This function grabs events from the database and updates the view
-    function getPosts(category) {
+    function getEvents(category) {
       var categoryString = category || "";
       if (categoryString) {
         categoryString = "/category/" + categoryString;
       }
-      $.get("/api/posts" + categoryString, function(data) {
-        console.log("Posts", data);
-        posts = data;
-        if (!posts || !posts.length) {
+      $.get("/api/events" + categoryString, function(data) {
+        console.log("Events", data);
+        events = data;
+        if (!events || !events.length) {
           displayEmpty();
         }
         else {
