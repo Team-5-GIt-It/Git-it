@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var CreateNewEvent = sequelize.define("New Event", {
+  var Events = sequelize.define("Event", {
     event_name: DataTypes.STRING,
     host_name: DataTypes.STRING,
     date: DataTypes.DATEONLY,
@@ -7,5 +7,5 @@ module.exports = function(sequelize, DataTypes) {
     location: DataTypes.STRING,
     details: DataTypes.TEXT
   });
-  return CreateNewEvent;
+  return Events;
 };

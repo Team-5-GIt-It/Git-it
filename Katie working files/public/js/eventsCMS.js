@@ -28,7 +28,7 @@ $(document).ready(function() {
     $(eventForm).on("submit", function handleFormSubmit(event) {
       event.preventDefault();
       // Wont submit the post if we are missing an event name, host name, date, time, or location
-      if (!eventNameInput.val().trim() || !hostNameInput.val().trim() !dateInput.val().trim() !timeInput.val().trim() !locationInput.val().trim()) {
+      if (!eventNameInput.val().trim() || !hostNameInput.val().trim() || !dateInput.val().trim() || !timeInput.val().trim() || !locationInput.val().trim()) {
         return;
       }
       // Constructing a newEvent object to hand to the database

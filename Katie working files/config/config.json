@@ -2,7 +2,7 @@
   "development": {
     "username": "teamuser",
     "password": "GitIt",
-    "database": "exampledb",
+    "database": "parties",
     "host": "localhost",
     "dialect": "mysql"
   },
