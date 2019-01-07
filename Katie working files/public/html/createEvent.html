@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gather--Create New Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+<h1>Welcome to Gather</h1>
+
+<p1>Complete the form below to create a new event</p1>
+
+<div class="container">
+<form>
+    <fieldset class="uk-fieldset">
+        <!-- <legend class="uk-legend">Create a new event</legend> -->
+            <div class="uk-margin">
+                <input class="uk-input" id="eventname" type="text" placeholder="Event Name">
+                    </div>
+            <div class="uk-margin">
+                <input class="uk-input" id="hostname" type="text" placeholder="Host Name">
+                    </div>
+            <div class="uk-margin">
+                <input class="uk-input" id="date" type="text" placeholder="Date">
+                    </div>
+            <div class="uk-margin">
+                <input class="uk-input" id="time" type="text" placeholder="Time">
+                    </div>
+            <div class="uk-margin">
+                <input class="uk-input" id="location" type="text" placeholder="Location">
+                    </div>
+            
+            <div class="uk-margin">
+                <textarea class="uk-textarea" id="details" rows="5" placeholder="Add any additional details for your guests here.  Will there be a dress code?  Should the party be a suprise?"></textarea>
+                     </div>
+            </fieldset>
+            <button class="uk-button uk-button-default">Submit</button>
+        </form>
+</div>
+
+<p1>Would you like to create a checklist for this event?</p1>
+
+
+<script src="/Katie working files/models/events.js"></script>
+<script src="/Katie working files/routes/eventsRoutes.js"></script>
+<script src="/Katie working files/public/js/createEvent.js"></script>
+</body>
+</html>

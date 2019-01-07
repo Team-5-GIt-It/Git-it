@@ -18,7 +18,7 @@ module.exports = function(app) {
   });
 
   app.get("/eventscms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/html/eventscms.html"));
+    res.sendFile(path.join(__dirname, "../public/html/createEvent.html"));
   });
 
   // events route loads events.html
