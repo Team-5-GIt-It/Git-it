@@ -2,14 +2,14 @@
   "development": {
     "username": "teamuser",
     "password": "GitIt",
-    "database": "exampledb",
+    "database": "partiesdb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "testdb",
+    "password": "GitIt",
+    "database": "partiestestdb",
     "host": "localhost",
     "dialect": "mysql",
     "logging": false
