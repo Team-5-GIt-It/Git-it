@@ -34,8 +34,9 @@ module.exports = function(app) {
       timeEnd: req.body.timeEnd,
       groupSize: req.body.groupSize,
       eventType: req.body.eventType,
+      attire: req.body.attire,
       description: req.body.description,
-      eventCode: req.body.address
+      eventCode: req.body.eventCode
     }).then(function(eventData) {
       res.json(eventData);
     });

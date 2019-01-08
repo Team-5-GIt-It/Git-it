@@ -98,7 +98,7 @@
                 .trim(),
               $("#groupsize option:selected").val(),
               $("#eventtype option:selected").val(),
-               $("#attire option:selected").val(),
+              $("#attire option:selected").val(),
               $("#description")
                 .val()
                 .trim();
