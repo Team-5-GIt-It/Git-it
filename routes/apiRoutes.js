@@ -6,10 +6,9 @@ module.exports = function(app) {
       where: {
         eventCode: req.params.eventCode
       }
-    })
-      .then(function(eventData) {
-        res.json(eventData);
-      });
+    }).then(function(eventData) {
+      res.json(eventData);
+    });
   });
 
   // POST route for saving a new post
@@ -33,5 +32,5 @@ module.exports = function(app) {
     }).then(function(eventData) {
       res.json(eventData);
     });
-
+  });
 };
