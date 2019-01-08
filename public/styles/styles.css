@@ -117,6 +117,10 @@ span {
   border-radius: 4em;
   
 }
+#address {
+  border-radius: 4em;
+  
+}
 #city {
   border-radius: 4em;
   
@@ -149,8 +153,10 @@ span {
   border-radius: 4em;
   
 }
- 
-
+#eventtype {
+  border-radius: 4em;
+  
+}
 
 #section3h4 {
    margin-top:30px;
