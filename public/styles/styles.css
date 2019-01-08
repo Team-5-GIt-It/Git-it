@@ -157,6 +157,10 @@ span {
   border-radius: 4em;
   
 }
+#attire {
+  border-radius: 4em;
+  
+}
 
 #section3h4 {
    margin-top:30px;
@@ -213,8 +217,8 @@ span {
 }
 #description {
   font-family: 'Aleo', serif;
-
 }
+
 /*======================= Footer ==================*/
 footer {
   font-family: 'Aleo', serif;
