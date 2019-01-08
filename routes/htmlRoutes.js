@@ -12,7 +12,7 @@ module.exports = function(app) {
   });
 
   // Load index page
-  app.get("/eve", function(req, res) {
+  app.get("/event", function(req, res) {
     db.Event.findAll({}).then(function(dbExamples) {
       res.render("event", {
         msg: "Welcome!",

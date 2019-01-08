@@ -201,7 +201,20 @@ span {
   font-family: 'Pacifico', cursive;
 }
 
+/* ================ Event Page =====================*/
+#eventname {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+}
 
+#aboutEvent {
+  font-family: 'Aleo', serif;
+}
+#description {
+  font-family: 'Aleo', serif;
+
+}
 /*======================= Footer ==================*/
 footer {
   font-family: 'Aleo', serif;
