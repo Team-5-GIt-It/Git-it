@@ -11,7 +11,17 @@ module.exports = function(app) {
     });
   });
 
-  // Load example page and pass in an example by id
+  // Load index page
+  app.get("/event", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("event", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+ 
+// Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
       dbExample
@@ -27,3 +37,4 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+

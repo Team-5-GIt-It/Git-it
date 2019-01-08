@@ -1,0 +1,148 @@
+<!-- - - - - - - - -  - - - - - - Navbar - - - - - - - - - - - - - - - - - - -->
+
+<nav class="uk-navbar-container-default" uk-navbar style="z-index: 980;" uk-sticky="bottom">
+
+  <!--  - - - - - - This is a button toggling the off-canvas  - - - - - - - --->
+  <button uk-toggle="target: #offcanvas" uk-icon="icon: menu"></button>
+  <h1 id="navLogo">Gather</h1>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href=""></a></li>
+      <li class="uk-parent"><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </div>
+
+  <!-- - - - - - - - - - - This is the off-canvas - - - - - - - - - - - - - -  -->
+  <div id="offcanvas" uk-offcanvas="flip: true" style->
+    <div class="uk-offcanvas-bar ">
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <span id="homeIcon"></span>
+        {{!-- <li class="uk-active"><a href="#" uk-icon="home">Home</a></li>
+        <li class="uk-parent"> --}}
+        <li class="uk-active"><a href="#" uk-icon="pencil">Create Gathering</a></li>
+        <li class="uk-parent">
+          <a href="#Survey">survey</a>
+        <li class="uk-active"><a href="#blur" uk-icon="search">Search Gathering</a></li>
+        <li class="uk-parent">
+          <a href="#blur">search</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li class="uk-active"><a href="#team" uk-icon="world">Web Developers</a></li>
+        <li class="uk-parent">
+          <a href="#team">bio</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="welcome" class=" uk-height-viewport uk-background-fixed uk-background-cover  uk-background-center-left uk-overflow-hidden uk-light uk-flex uk-flex-middle uk-text-bold"
+  uk-parallax="viewport: 0.5;" style="background-image: url('image/celebration.gif');">
+  <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+    <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
+      <h1 id="eventname">Welcome to the Event Page!</h1>
+      <h2 id="hostname" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Hosted by: ..............</strong></h2>
+  </div>
+</div>
+</div>
+
+<div id="eventContainer" class="uk-height-viewport uk-background-cover uk-background-fixed  uk-overflow-hidden uk-flex uk-flex-top" style="background-image: url('image/bg.jpg');">
+  <div id="eventInfo">
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">
+      <h1 id="aboutEvent"> About This Event</h1>
+      <p class="uk-text-center uk-text-large" id="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa officiis maxime error inventore cupiditate. Blanditiis consequatur exercitationem dolore impedit atque veritatis quas iure dicta, temporibus esse animi, et ipsum?</p>
+
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <div class="uk-section uk-section-default uk-preserve-color">
+    <div class="uk-container">
+      <div class="uk-panel uk-dark uk-margin-medium">
+        <h3>Date & Time</h3>
+          <ul id="date"></ul>
+          <ul id="time-start"></ul>
+          <ul id="time-end"></ul>
+      </div>
+      <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3>How big is your Gathering?</h3>
+               <ul id="groupsize"></ul>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3>What kind of Gathering is this??</h3>
+              <ul id="eventtype"></ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <h3 class="uk-card-title">Location</h3>
+            <a href="#" data-type="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23755.274866194315!2d-87.65699262791242!3d41.90555793758254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snorthwestern+university!5e0!3m2!1sen!2sus!4v1546716347633" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "gather0f-20";
+amzn_assoc_ad_mode = "manual";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "My Amazon Picks";
+amzn_assoc_linkid = "f18004305b674c6700191ef09be853fe";
+amzn_assoc_asins = "B00QLDGSJM,B009PF0A56,B00061CAPG,B07CK4HHSY,B07BKQ8VPR,B0784QG1NX,B00KJHCU2U,B01832S51C";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+<!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
+<footer class="uk-padding-small uk-text-center">
+  &copy; Copyright Team Git-It 2019
+</footer>
+
+
+
+{{!-- <script>
+  function eventInfo() {
+    $.ajax({ url: "/api/event", method: "GET" })
+      .then(function(data) {
+        console.log(data);
+        console.log("------------------------------------");
+        // display the users gathering
+        for (var i = 0; i < tableData.length; i++) {
+          // Get a reference to the tableList element and populate it with tables
+          var tableList = $("#tableList");
+          // Then display the fields in the HTML (Section Name, Date, URL)
+          var listItem = $("<li class='list-group-item mt-4'>");
+          listItem.append(
+            $("<h2>").text("Table #" + (i + 1)),
+            $("<hr>"),
+            $("<h2>").text("ID: " + tableData[i].customerID),
+            $("<h2>").text("Name: " + tableData[i].customerName),
+            $("<h2>").text("Email: " + tableData[i].customerEmail),
+            $("<h2>").text("Phone: " + tableData[i].phoneNumber)
+          );
+          tableList.append(listItem);
+        }
+      });
+  }
+</script>
+ --}}
