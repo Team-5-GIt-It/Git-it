@@ -105,3 +105,17 @@
           }
         }
       });
+
+      /////// Event handlers for the create and search buttons\\\\\\\\\
+  function createButtonClick() {
+    window.location = "#Survey";
+  };
+  function searchButtonClick() {
+    window.location = "#blur"
+  }
+  $("#createButton").on("click", function () {
+    createButtonClick();
+  });
+  $("#searchButton").on("click", function () {
+   searchButtonClick();
+  });
