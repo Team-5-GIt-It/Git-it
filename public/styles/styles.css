@@ -113,7 +113,46 @@ span {
 #hostname {
   border-radius: 4em;
 }
- #section3h4 {
+#eventname {
+  border-radius: 4em;
+  
+}
+#city {
+  border-radius: 4em;
+  
+}
+#state{
+  border-radius: 4em;
+  
+}
+#zip{
+  border-radius: 4em;
+  
+}
+#date {
+  border-radius: 4em;
+  
+}
+#time-start {
+  border-radius: 4em;
+  
+}
+#groupsize {
+  border-radius: 4em;
+  
+}
+#time-end {
+  border-radius: 4em;
+  
+}
+#event-type {
+  border-radius: 4em;
+  
+}
+ 
+
+
+#section3h4 {
    margin-top:30px;
    font-family: 
    'Aleo',serif;
