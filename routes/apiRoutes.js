@@ -10,7 +10,7 @@ module.exports = function(app) {
       .then(function(eventData) {
         res.json(eventData);
       });
-  });
+  };
 
   // POST route for saving a new post
   app.post("/api/events", function(req, res) {
@@ -30,8 +30,7 @@ module.exports = function(app) {
       attire: req.body.attire,
       description: req.body.description,
       eventCode: req.body.eventCode
-    }).then(function(eventData) {
+    })
+    .then(function(eventData) {
       res.json(eventData);
     });
-
-};
