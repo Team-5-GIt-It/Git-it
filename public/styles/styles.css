@@ -22,6 +22,10 @@ svg {
   margin-left: 10px;
 }
 
+#chevron-down {
+  font-size: 2em;
+}
+
 /*========== Section 1 |Create and Search Buttons| =============*/
 
 h1#gatherLogoBig {
