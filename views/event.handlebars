@@ -49,60 +49,79 @@
   uk-parallax="viewport: 0.5;" style="background-image: url('image/gather3.jpeg');">
   <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
     <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
-      <h1 id="eventname">Event Page!</h1>
-      <h2 id="hostname" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Hosted by:</strong></h2>
+      <h1 id="eventname" style="color:black">{{eventData.event}}</h1>
+      <h2 style="color:black" id="hostname" class="hostName" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Hosted by: {{eventData.name}}</strong></h2>
   </div>
 </div>
 </div>
-
-<div id="eventContainer" class="uk-height-viewport uk-background-cover uk-background-fixed  uk-overflow-hidden uk-flex uk-flex-top" style="background-image: url('image/bg.jpg');">
+<!-- - - - - - - -  - - - - - - Section 2/ event info - - - - - - - - - - - -->
+<div id="eventContainer" class="uk-height-viewport uk-background-cover uk-background-fixed  uk-overflow-hidden uk-flex uk-flex-top" style="background-color: rgb(187, 199, 199);">
   <div id="eventInfo">
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">
       <h1 id="aboutEvent" class="uk-text-center"> About This Event</h1>
-      <p class="uk-text-center uk-text-large" id="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis culpa officiis maxime error inventore cupiditate. Blanditiis consequatur exercitationem dolore impedit atque veritatis quas iure dicta, temporibus esse animi, et ipsum?</p>
+      <p class="uk-text-center uk-text-large" id="description">{{eventData.description}}</p>
 
-<div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+{{!-- <div class="uk-child-width-1-2@m uk-grid-match" uk-grid> --}}
   <div>
-    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+    <div id="eventInfoContainer" class="uk-card uk-card-default uk-text-center uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
     <div class="uk-section uk-section-default uk-preserve-color">
     <div class="uk-container">
       <div class="uk-panel uk-dark uk-margin-medium">
-        <h3>Date & Time</h3>
-          <ul id="date"></ul>
-          <ul id="time-start"></ul>
-          <ul id="time-end"></ul>
+        <h2>Date</h2>
+          <ul id="date">{{eventData.date}}</ul>
+        <h2>Time</h2>
+          <label for="time">Start Time:
+          <ul id="time-start">{{eventData.timeStart}}</ul>
+          </label>
+          <label for="time">End Time:
+          <ul id="time-end">{{eventData.timeEnd}}</ul>
+          </label>
       </div>
       <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
         <div>
-            <div class="uk-card uk-card-default uk-card-body">
-              <h3>How big is your Gathering?</h3>
-               <ul id="groupsize"></ul>
-            </div>
+          <h3>Party size</h3>
+            <ul id="groupsize">{{eventData.groupSize}}</ul>
         </div>
         <div>
-            <div class="uk-card uk-card-default uk-card-body">
-              <h3>What kind of Gathering is this??</h3>
-              <ul id="eventtype"></ul>
-            </div>
+          <h3>Party type</h3>
+          <ul id="eventtype">{{eventData.eventType}}</ul>
+        </div>
+        <div>
+          <h3>Event attire</h3>
+          <ul id="eventattire">{{eventData.attire}}</ul>
         </div>
       </div>
     </div>
-</div>
-</div>
-</div>
-      <div>
-        <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-            <h3 class="uk-card-title">Location</h3>
-            <a href="#" data-type="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23755.274866194315!2d-87.65699262791242!3d41.90555793758254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snorthwestern+university!5e0!3m2!1sen!2sus!4v1546716347633" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></a>
-        </div>
-      </div>
     </div>
   </div>
 </div>
+{{!-- <div class="uk-child-width-1-1@m" uk-grid> --}}
+    <div>
+          <div class="uk-card-body">
+            <div>
+              <div id="eventInfoContainer" class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                <h2 class="uk-card-title">Location<span uk-icon="location"></span></h2>
+                <ul id="address">{{eventData.address}}</ul>
+                <ul id="city">{{eventData.city}}</ul>
+                <ul id="state">{{eventData.state}}</ul>
+                <ul id="zip">{{eventData.zip}}</ul>
+              </div>
+            </div>  
+          </div>
+    </div>
 
 <!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
 <footer class="uk-padding-small uk-text-center">
   &copy; Copyright Team Git-It 2019
 </footer>
 
+<!-- //////////////////////Jquery and Javascript\\\\\\\\\\\\\\\\\ -->
+
+<script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+  crossorigin='anonymous'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+
+<script src="js/event.js"></script>
 
