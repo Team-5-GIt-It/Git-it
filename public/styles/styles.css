@@ -59,6 +59,11 @@ h1#gatherLogoBig {
   margin-left: 1em;
 }
 
+#chevron-down {
+  font-size: 2em;
+}
+
+
 /*======================= Section 2 |Blur effect| =============*/
 #organize {
   color: white;
