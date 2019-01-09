@@ -54,9 +54,9 @@ h1#gatherLogoBig {
 
 #section1P {
   color: white;
-  font-weight: 100;
+  font-size: 25px;
   font-family: 'Assistant', sans-serif;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 #chevron-down {
@@ -69,22 +69,25 @@ h1#gatherLogoBig {
   color: white;
   font-size: 5em;
   font-family: 'Pacifico', cursive;
-  margin-top: 150px;
-  margin-left: 75px;
+  padding-top: 1em;
+  margin-left: 2em;
 }
 
 #section2H2 {
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: 'Libre Baskerville', serif;
-  margin-top: 75px;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  /* margin-top: 75px; */
   margin-left: -1em;
 }
 
 #searchbar {
-  margin-top: 500px;
-  margin-left: -35%;
+  /* margin-top: 500px; */
+  /* margin-left: -3em; */
   border-radius: 60px;
+
 }
 
 #blur {
@@ -112,6 +115,10 @@ h1#gatherLogoBig {
   color: black;
   font-family: 'Assistant', sans-serif;
 } */
+#surveyLabel {
+  font-size: 1.5em;
+  font-family: 'Aleo',serif;
+}
 span {
   font-family: 'Aleo',serif;
 }
@@ -169,8 +176,8 @@ span {
 
 #section3h4 {
    margin-top:30px;
-   font-family: 
-   'Aleo',serif;
+   font-family: 'Aleo',serif;
+   font-size: 1.6em;
    }
 
 #submit{

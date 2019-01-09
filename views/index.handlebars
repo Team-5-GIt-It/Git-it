@@ -87,22 +87,18 @@
     <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-filter; blur: 0,10;">
       <h1 id="organize">Organize</h1>
       <h2 id="section2H2"> Search your gathering by entering your event code below.</h2>
-
-  </div>
-  <nav id="searchbar" class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-
+      <nav id="searchbar" class="uk-navbar-container" uk-navbar>
+    {{!-- <div class="uk-navbar-center"> --}}
       <div class="uk-navbar-item uk-bottom-center">
         <form class="uk-search uk-search-navbar">
           <span uk-search-icon></span>
           <input id="searchinput" class="uk-search-input" type="search" placeholder="Search...">
         </form>
       </div>
-
     </div>
+  </nav>
+  </div> 
 </div>
-</nav>
-
 
 <!-- - - - - - -  - - - - - - -  Section 3/ Survey - - - - - - - - -  - - - - -->
 
@@ -126,12 +122,12 @@
           </div>
 
           <div class="uk-width-1-2@s ">
-            <label class="uk-form-label uk-form-large" for="hostname">Your Name<input class="uk-input" type="text" id="hostname"
+            <label id="surveyLabel" class="uk-form-label uk-form-large" for="hostname">Your Name<input class="uk-input" type="text" id="hostname"
                 name="name" required /></label>
           </div>
 
           <div class="uk-width-1-2@s">
-            <label class="uk-form-label uk-form-large" for="eventname">Gathering Name<input class="uk-input" type="text"
+            <label id="surveyLabel" class="uk-form-label uk-form-large" for="eventname">Gathering Name<input class="uk-input" type="text"
                 id="eventname" name="eventname" required /></label>
           </div>
 
@@ -145,39 +141,39 @@
           </div>
 
           <div class="uk-width-1-4">
-            <label class="uk-form-label" for="address">Address<input class="uk-input" type="text" name="address" id="address"
+            <label id="surveyLabel" class="uk-form-label" for="address">Address<input class="uk-input" type="text" name="address" id="address"
                 required /></label>
           </div>
           <div class="uk-width-1-4">
-            <label class="uk-form-label" for="city">City<input class="uk-input" type="text" name="city" id="city"
+            <label id="surveyLabel" class="uk-form-label" for="city">City<input class="uk-input" type="text" name="city" id="city"
                 required /></label>
           </div>
           <div class="uk-width-1-4">
-            <label class="uk-form-label" for="state">State<input class="uk-input" type="text" name="state" id="state"
+            <label id="surveyLabel" class="uk-form-label" for="state">State<input class="uk-input" type="text" name="state" id="state"
                 required /></label>
           </div>
           <div class="uk-width-1-4">
-            <label class="uk-form-label" for="zip">Zip<input class="uk-input" type="number" minlength="5" maxlength="5"
+            <label id="surveyLabel" class="uk-form-label" for="zip">Zip<input class="uk-input" type="number" minlength="5" maxlength="5"
                 name="zip" id="zip" required /></label>
           </div>
-
+          
           <div class="uk-width-1-1">
             <h4 id="section3h4">When's it going to happen?</h4>
           </div>
 
           <div class="uk-width-1-3">
-            <label class="uk-form-label" for="date">Date<input class="uk-input" type="date" name="date" id="date"
+            <label id="surveyLabel" class="uk-form-label" for="date">Date<input class="uk-input" type="date" name="date" id="date"
                 required /></label>
           </div>
           <div class="uk-width-1-3">
-            <label class="uk-form-label" for="time">
+            <label id="surveyLabel" class="uk-form-label" for="time">
               Starts <input class="uk-input" type="time" name="time-start" id="time-start" required />
               Ends <input class="uk-input" type="time" name="time-end" id="time-end" />
             </label>
           </div>
 
           <div class="uk-width-1-3">
-            <label class="uk-form-label" for="groupsize">How big is your Gathering ?
+            <label id="surveyLabel" class="uk-form-label" for="groupsize">How big is your Gathering ?
               <select class="uk-select" id="groupsize">
                 <option value="Small">Small (0-10)</option>
                 <option value="Medium">Medium (11-35)</option>
