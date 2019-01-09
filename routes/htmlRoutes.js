@@ -20,6 +20,19 @@ module.exports = function(app) {
       });
     });
   });
+
+  app.get("/event/:eventCode", function(req, res) {
+    db.Event.findOne({
+      where: {
+        eventCode: req.params.eventCode
+      }
+    }).then(function(data) {
+      res.render("event", {
+        msg: "Welcome!",
+        eventData: data
+      });
+    });
+  });
  
 // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
@@ -37,4 +50,5 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
 
