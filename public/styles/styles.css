@@ -211,11 +211,24 @@ span {
   font-family: 'Pacifico', cursive;
   font-size: 6em;
 }
-
+.hostName {
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+}
 #aboutEvent {
   font-family: 'Aleo', serif;
+  text-align: center;
 }
 #description {
+  font-family: 'Aleo', serif;
+  font-size: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#eventInfoContainer{
+  /* margin-left: 15em; */
+  border-radius: 4em;
+  text-align: center;
   font-family: 'Aleo', serif;
 }
 
