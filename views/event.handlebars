@@ -112,36 +112,47 @@
     </div>
 
 
-{{!-- Dummy form for Checklist --}}
-  {{!-- <div>
-  <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-    <form id="checklistform">
-      <input id="checklistperson" type="text" placeholder="Enter your name">
-      <input id="checklistinput" type="text" placeholder="How you'll help"><button class="uk-button-default" id="checklistsubmit">Submit</button>
-    </form>
-  </div>
-</div>
+ {{!-- Dummy form for Checklist --}}
+          <div>
+            <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+              <form id="checklistform">
+                <input id="checklistperson" type="text" placeholder="Enter your name">
+                <input id="checklistinput" type="text" placeholder="How you'll help">
+                <input id="eventid" type="hidden" value={{eventData.id}}><button class="uk-button-default" id="checklistsubmit">Submit</button>
+              </form>
+            </div>
+          </div>
 
-<div>
-  <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-    <h3>Incomplete</h3>
-    <ul id="incompletedchecklist" class="uk-list uk-list-large">
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-  </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+              <div id="incompletelist">
+                <h3>Incomplete</h3>
+                <div>
+                  <ul id="incompletedchecklist" class="uk-list uk-list-large">
+                    {{#each eventData.Checklists}}
+                      {{#unless completed}}
+                          <li>{{name}} - {{itemText}} <button id="checklistbtn" data-id="{{id}}" data-completed="{{completed}}" data-eventid="{{EventId}}">Got It!</button></li>
+                      {{/unless}}
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-  <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-    <h3>Completed
-    </h3>
-    <ul id="completedchecklist" class="uk-list uk-list-large">
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-  </div>
-</div> --}}
+             <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+              <div id="completelist">
+                <h3>Completed</h3>
+                <div>
+                  <ul id="completedchecklist" class="uk-list uk-list-large">
+                    {{#each eventData.Checklists}}
+                      {{#if completed}}
+                       <li>{{name}} - {{itemText}} <button id="checklistbtn" data-id="{{id}}" data-completed="{{completed}}" data-eventid="{{EventId}}">Undo</button></li>
+                      {{/if}}
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
+            </div>
 
 <!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
 <footer class="uk-padding-small uk-text-center" >

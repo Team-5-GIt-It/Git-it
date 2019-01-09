@@ -25,22 +25,11 @@ module.exports = function(app) {
     db.Event.findOne({
       where: {
         eventCode: req.params.eventCode
-      }
+      },
+      include: [db.Checklist]
     }).then(function(data) {
       res.render("event", {
-        msg: "Welcome!",
         eventData: data
-      });
-    });
-  });
- 
-// Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.render("example", {
-        example: dbExample
       });
     });
   });

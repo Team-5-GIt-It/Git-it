@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
   var Checklist = sequelize.define("Checklist", {
     name: DataTypes.STRING,
     itemText: DataTypes.STRING,
-    completed: DataTypes.BOOLEAN
+    completed: DataTypes.BOOLEAN,
+    EventId: DataTypes.INTEGER
   });
 
   Checklist.associate = function(models) {
