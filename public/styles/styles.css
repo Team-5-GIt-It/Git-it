@@ -206,7 +206,7 @@ span {
 }
 
 /* ================ Event Page =====================*/
-#eventname {
+#eventName {
   color: white;
   font-family: 'Pacifico', cursive;
   font-size: 6em;
@@ -216,7 +216,7 @@ span {
   font-size: 4em;
 }
 #eventInfo{
-  margin-left: 26%;
+  margin-left: 20%;
 }
 #aboutEvent {
   font-family: 'Aleo', serif;
@@ -249,20 +249,4 @@ label {
 /*======================= Footer ==================*/
 footer {
   font-family: 'Aleo', serif;
-  width: 100%;
 }
-/* @media (min-width: 768px) and (max-width: 1199.98px) { 
-  #organize{
-      width: 100%;
-  }
-}
-@media (max-width: 575.98px) { 
-  #organize{
-      width: 100%;
-  }
-}
-@media (max-width: 767.98px) { 
-  #organize{
-      width: 100%;
-  } 
-} */
