@@ -5,6 +5,8 @@ A party host first completes a survey with details of the gathering.  The survey
 
 Once the survey is completed, an event page is generated.  All information the host provided is shown on the event page to help coordinate the gathering.  Event coordinated harmoneously!
 
+Node packages: dotenv; express; express-handlebars; sequelize; mysql2
+
 https://team-git-it.herokuapp.com/
 
 presentation slides
