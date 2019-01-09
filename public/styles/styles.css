@@ -242,13 +242,14 @@ span {
 }
 #eventInfoContainer {
   /* margin-left: 15em; */
-  border-radius: 2em;
+  border-radius: 1.5em;
   text-align: center;
 }
 #eventInfoContainer,h2{
   color: rgba(14, 39, 41, 0.438);
   font-family: 'Aleo', serif;
   font-size: 1.5em;
+  border-radius: 2em;
 }
 .info {
   font-family: 'Pacifico', cursive;
@@ -257,6 +258,8 @@ span {
 label {
   padding: 2em; 
 }
+.checklistform {
+  margin-left: 20px;
 
 /*======================= Footer ==================*/
 footer {

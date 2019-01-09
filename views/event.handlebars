@@ -113,20 +113,21 @@
 
 
  {{!-- Dummy form for Checklist --}}
-          <div>
-            <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+          <div class="uk-card-body">
+            {{!-- <div> --}}
+            <div id="eventInfoContainer" class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
               <form id="checklistform">
-                <input id="checklistperson" type="text" placeholder="Enter your name">
-                <input id="checklistinput" type="text" placeholder="How you'll help">
+                <input class="checklistform" id="checklistperson" type="text" placeholder="Enter your name">
+                <input class="checklistinput" id="checklistinput" type="text" placeholder="How you'll help">
                 <input id="eventid" type="hidden" value={{eventData.id}}><button class="uk-button-default" id="checklistsubmit">Submit</button>
               </form>
-            </div>
-          </div>
+              <hr>
+            
+          {{!-- </div> --}}
 
-          <div>
-            <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            {{!-- <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> --}}
               <div id="incompletelist">
-                <h3>Incomplete</h3>
+                <h2>Incomplete</h2>
                 <div>
                   <ul id="incompletedchecklist" class="uk-list uk-list-large">
                     {{#each eventData.Checklists}}
@@ -137,11 +138,12 @@
                   </ul>
                 </div>
               </div>
-            </div>
+              <hr>
+            {{!-- </div> --}}
 
-             <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-              <div id="completelist">
-                <h3>Completed</h3>
+             {{!-- <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"> --}}
+            <div id="completelist">
+              <h2>Completed</h2>
                 <div>
                   <ul id="completedchecklist" class="uk-list uk-list-large">
                     {{#each eventData.Checklists}}
@@ -152,7 +154,12 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            {{!-- </div> --}}
+          {{!-- </div> --}}
+        </div>
+        <br>
+        <br>
+
 
 <!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
 <footer class="uk-padding-small uk-text-center" >
