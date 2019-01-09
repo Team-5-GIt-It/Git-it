@@ -5,26 +5,7 @@ $(document).ready(function() {
     $(document).on("click", "button.delete", handleDelete);
     $(document).on("click", "button.edit", handleEdit);
     var events;
-  
-//not sure this section is applicable to our app
-    // This function grabs events from the database and updates the view
-    function getEvents(category) {
-      var categoryString = category || "";
-      if (categoryString) {
-        categoryString = "/category/" + categoryString;
-      }
-      $.get("/api/events" + categoryString, function(data) {
-        console.log("Events", data);
-        events = data;
-        if (!events || !events.length) {
-          displayEmpty();
-        }
-        else {
-          initializeRows();
-        }
-      });
-    }
-  
+
     // This function does an API call to delete events
     function deleteEvent(id) {
       $.ajax({

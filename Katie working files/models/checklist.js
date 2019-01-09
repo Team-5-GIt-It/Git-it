@@ -4,6 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       complete: DataTypes.BOOLEAN
     });
 
+//NEW
     Checklist.associate = function(models) {
       // We're saying that a Checklist should belong to an Event
       // A Checklist can't be created without an Event due to the foreign key constraint
@@ -12,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
           allowNull: false
         }
       });
+    };
 
     return Checklist;
   };
-  

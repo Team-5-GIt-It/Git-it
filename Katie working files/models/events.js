@@ -8,12 +8,14 @@ module.exports = function(sequelize, DataTypes) {
     details: DataTypes.TEXT
   });
 
+//NEW
   Events.associate = function(models) {
     // Associating Events with Checklist
     // When an Event is deleted, also delete any associated Checklist
     Events.hasOne(models.Checklist, {
       onDelete: "cascade"
     });
+  };
 
   return Events;
 };
