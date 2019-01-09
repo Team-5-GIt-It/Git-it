@@ -215,24 +215,54 @@ span {
   font-family: 'Pacifico', cursive;
   font-size: 4em;
 }
+#eventInfo{
+  margin-left: 26%;
+}
 #aboutEvent {
   font-family: 'Aleo', serif;
   text-align: center;
 }
 #description {
   font-family: 'Aleo', serif;
-  font-size: 15px;
+  font-size: 2em;
   margin-left: 10%;
   margin-right: 10%;
 }
-#eventInfoContainer{
+#eventInfoContainer {
   /* margin-left: 15em; */
-  border-radius: 4em;
+  border-radius: 2em;
   text-align: center;
+}
+#eventInfoContainer,h2{
+  color: rgba(14, 39, 41, 0.438);
   font-family: 'Aleo', serif;
+  font-size: 1.5em;
+}
+.info {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+}
+label {
+  padding: 2em; 
 }
 
 /*======================= Footer ==================*/
 footer {
   font-family: 'Aleo', serif;
+  width: 100%;
 }
+/* @media (min-width: 768px) and (max-width: 1199.98px) { 
+  #organize{
+      width: 100%;
+  }
+}
+@media (max-width: 575.98px) { 
+  #organize{
+      width: 100%;
+  }
+}
+@media (max-width: 767.98px) { 
+  #organize{
+      width: 100%;
+  } 
+} */

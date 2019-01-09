@@ -49,7 +49,7 @@
   uk-parallax="viewport: 0.5;" style="background-image: url('image/gather3.jpeg');">
   <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
     <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
-      <h1 id="eventname" style="color:black">{{eventData.event}}</h1>
+      <h1 id="eventname" style="color:black"> {{eventData.event}} </h1>
       <h2 style="color:black" id="hostname" class="hostName" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Hosted by: {{eventData.name}}</strong></h2>
   </div>
 </div>
@@ -67,27 +67,27 @@
     <div class="uk-section uk-section-default uk-preserve-color">
     <div class="uk-container">
       <div class="uk-panel uk-dark uk-margin-medium">
-        <h2>Date</h2>
+        <h2 class="info">Date 🗓</h2>
           <ul id="date">{{eventData.date}}</ul>
-        <h2>Time</h2>
-          <label for="time">Start Time:
+        <h2 class="info">Time ⌚️</h2>
+          <label for="time">Start Time:<hr class="uk-divider-small">
           <ul id="time-start">{{eventData.timeStart}}</ul>
           </label>
-          <label for="time">End Time:
+          <label for="time">End Time:<hr class="uk-divider-small">
           <ul id="time-end">{{eventData.timeEnd}}</ul>
           </label>
       </div>
       <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
         <div>
-          <h3>Party size</h3>
+          <h3 class="info">Party size</h3>
             <ul id="groupsize">{{eventData.groupSize}}</ul>
         </div>
         <div>
-          <h3>Party type</h3>
+          <h3 class="info">Party type</h3>
           <ul id="eventtype">{{eventData.eventType}}</ul>
         </div>
         <div>
-          <h3>Event attire</h3>
+          <h3 class="info">Event attire</h3>
           <ul id="eventattire">{{eventData.attire}}</ul>
         </div>
       </div>
@@ -100,7 +100,7 @@
           <div class="uk-card-body">
             <div>
               <div id="eventInfoContainer" class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-                <h2 class="uk-card-title">Location<span uk-icon="location"></span></h2>
+                <h2 class="info">Location 📍</h2>
                 <ul id="address">{{eventData.address}}</ul>
                 <ul id="city">{{eventData.city}}</ul>
                 <ul id="state">{{eventData.state}}</ul>
@@ -143,7 +143,7 @@
 </div> --}}
 
 <!-- - - - - - -  - - - - - - - - -  - - Footer  - - - - - - - - - - - -->
-<footer class="uk-padding-small uk-text-center">
+<footer class="uk-padding-small uk-text-center" >
   &copy; Copyright Team Git-It 2019
 </footer>
 
