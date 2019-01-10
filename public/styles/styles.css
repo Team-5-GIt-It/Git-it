@@ -129,21 +129,32 @@ span {
   border-radius: 4em;
   
 }
+#eventContainer {
+  justify-content: space-around;
+}
 #address {
   border-radius: 4em;
+  min-width: 100px;
   
+ 
 }
 #city {
   border-radius: 4em;
+  min-width: 100px;
+ 
+  
   
 }
 #state{
   border-radius: 4em;
+  min-width: 100px;
+  
   
 }
 #zip{
   border-radius: 4em;
-  
+  min-width: 100px;
+ 
 }
 #date {
   border-radius: 4em;
@@ -227,9 +238,7 @@ span {
   font-family: 'Pacifico', cursive;
   font-size: 4em;
 }
-#eventInfo{
-  margin-left: 20%;
-}
+
 #aboutEvent {
   font-family: 'Aleo', serif;
   text-align: center;
@@ -254,9 +263,6 @@ span {
 .info {
   font-family: 'Pacifico', cursive;
   font-size: 1.5em;
-}
-label {
-  padding: 2em; 
 }
 .checklistform {
   margin-left: 20px;
