@@ -5,7 +5,8 @@ module.exports = function(app) {
     db.Event.findOne({
       where: {
         eventCode: req.params.eventCode
-      }
+      },
+      include: [db.Checklist]
     }).then(function(eventData) {
       res.json(eventData);
     });

@@ -17,13 +17,13 @@ module.exports = function(sequelize, DataTypes) {
     eventCode: DataTypes.STRING
   });
 
-  //   Event.associate = function(models) {
-  //     // Associating Author with Posts
-  //     // When an Author is deleted, also delete any associated Posts
-  //     Event.hasMany(models.Item, {
-  //       onDelete: "cascade"
-  //     });
-  //   };
+  Event.associate = function(models) {
+    // Associating Author with Posts
+    // When an Author is deleted, also delete any associated Posts
+    Event.hasMany(models.Checklist, {
+      onDelete: "cascade"
+    });
+  };
 
   return Event;
 };
