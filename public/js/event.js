@@ -13,6 +13,9 @@ function createEventCode() {
 $("#hostform").validate({
   submitHandler: function(form) {
     // Get values from form
+    $("#hostform").click(function() {
+      form.submit();
+    });
 
     // Create New Host Object
     let newHost = {
@@ -57,8 +60,16 @@ $("#hostform").validate({
       type: "POST",
       data: newHost
     }).then(function() {
+      UIkit.modal("#formmodal").show();
+      $("#modalcode").text(newHost.eventCode);
+      $("#modalconfirm").on("click", function(event) {
+        event.preventDefault();
+        let pathname = "/event/" + newHost.eventCode;
+        console.log(pathname);
+        window.location.assign(pathname);
+      });
       console.log("New event posted!");
-      location.reload();
+      // location.reload();
     });
 
     // Function to Reset Form on Reset Click
@@ -100,17 +111,17 @@ $("#hostform").validate({
   }
 });
 
-  $("#searchbar").keypress(function(event) {
-    event.preventDefault();
-    if (event.which == 13){
-      let searchCode = $("#searchinput")
+$("#searchbar").keypress(function(event) {
+  event.preventDefault();
+  if (event.which == 13) {
+    let searchCode = $("#searchinput")
       .val()
       .trim();
-      let pathname = "/event/" + searchCode;
-      console.log(pathname);
+    let pathname = "/event/" + searchCode;
+    console.log(pathname);
     window.location.assign(pathname);
-    }
-  });
+  }
+});
 
 /////// Event handlers for the create and search buttons\\\\\\\\\
 function createButtonClick() {
