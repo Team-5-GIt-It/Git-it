@@ -217,6 +217,7 @@ span {
 
 }
 
+
 /*======================= Section 4 | Team |==================*/
 #team {
   margin-top: 85px;
@@ -253,8 +254,8 @@ span {
 #description {
   font-family: 'Aleo', serif;
   font-size: 2em;
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
 }
 #eventInfoContainer {
   /* margin-left: 15em; */
