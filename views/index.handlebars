@@ -7,9 +7,15 @@
   <h1 id="navLogo">Gather</h1>
   <div class="uk-navbar-left">
     <ul class="uk-navbar-nav">
-      <li class="uk-active"><a href=""></a></li>
-      <li class="uk-parent"><a href=""></a></li>
-      <li><a href=""></a></li>
+      <li class="uk-active">
+        <a href=""></a>
+      </li>
+      <li class="uk-parent">
+        <a href=""></a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
     </ul>
   </div>
 
@@ -19,38 +25,74 @@
       <button class="uk-offcanvas-close" type="button" uk-close></button>
       <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
         <span id="homeIcon"></span>
-        {{!-- <li class="uk-active"><a href="#" uk-icon="home">Home</a></li>
+        {{!--
+        <li class="uk-active">
+          <a href="#" uk-icon="home">Home</a>
+        </li>
         <li class="uk-parent"> --}}
-        <li class="uk-active"><a href="#" uk-icon="pencil">Create Gathering</a></li>
-        <li class="uk-parent">
-          <a href="#Survey">survey</a>
-          {{!-- <ul class="uk-nav-sub">
-            <li><a href="#">Date</a></li>
-            <li><a href="#">Time</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Invite</a></li>
-          </ul> --}}
-        <li class="uk-active"><a href="#blur" uk-icon="search">Search Gathering</a></li>
-        <li class="uk-parent">
-          <a href="#blur">search</a>
-          <ul class="uk-nav-sub">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-        <li class="uk-active"><a href="#team" uk-icon="world">Web Developers</a></li>
-        <li class="uk-parent">
-          <a href="#team">bio</a>
-          <ul class="uk-nav-sub">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-        {{!-- <li class="uk-nav-header">Header</li>
-        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
-        <li class="uk-nav-divider"></li>
-        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li> --}}
+          <li class="uk-active">
+            <a href="#" uk-icon="pencil">Create Gathering</a>
+          </li>
+          <li class="uk-parent">
+            <a href="#Survey">survey</a>
+            {{!--
+            <ul class="uk-nav-sub">
+              <li>
+                <a href="#">Date</a>
+              </li>
+              <li>
+                <a href="#">Time</a>
+              </li>
+              <li>
+                <a href="#">Location</a>
+              </li>
+              <li>
+                <a href="#">Invite</a>
+              </li>
+            </ul> --}}
+            <li class="uk-active">
+              <a href="#blur" uk-icon="search">Search Gathering</a>
+            </li>
+            <li class="uk-parent">
+              <a href="#blur">search</a>
+              <ul class="uk-nav-sub">
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </li>
+            <li class="uk-active">
+              <a href="#team" uk-icon="world">Web Developers</a>
+            </li>
+            <li class="uk-parent">
+              <a href="#team">bio</a>
+              <ul class="uk-nav-sub">
+                <li>
+                  <a href="#"></a>
+                </li>
+                <li>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </li>
+            {{!--
+            <li class="uk-nav-header">Header</li>
+            <li>
+              <a href="#">
+                <span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li>
+              <a href="#">
+                <span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a>
+            </li> --}}
       </ul>
     </div>
   </div>
@@ -67,15 +109,16 @@
     <h1 id="landingpage" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
       <h1 id="gatherLogoBig">Gather</h1>
       <h2 id="section1H2">Organize Harmoniously...</h2>
-       <i id="chevron-down" class="fas fa-chevron-down"></i>     
-      <p id="section1P" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;"> <strong>Let us
-        start off our fun and collaborative experience by selecting from the buttons below which 
-        suit you best. If you plan to host and event, click the Create Gathering button. If you are a guest and are attending please click the Search Gathering button. </p>
-      <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.1;">CREATE
-        GATHERING</button>
+      <i id="chevron-down" class="fas fa-chevron-down"></i>
+      <p id="section1P" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">
+        <strong>Let us start off our fun and collaborative experience by selecting from the buttons below which suit you best. If
+          you plan to host and event, click the Create Gathering button. If you are a guest and are attending please click
+          the Search Gathering button. </p>
+      <button id="createButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.1;">CREATE GATHERING
+      </button>
 
-      <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.1;">SEARCH
-        GATHERING</button>
+      <button id="searchButton" class="uk-button uk-button-default uk-button-large" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.1;">SEARCH GATHERING
+      </button>
   </div>
 </div>
 </div>
@@ -88,16 +131,17 @@
       <h1 id="organize">Organize</h1>
       <h2 id="section2H2"> Search your gathering by entering your event code below.</h2>
       <nav id="searchbar" class="uk-navbar-container" uk-navbar>
-    {{!-- <div class="uk-navbar-center"> --}}
-      <div class="uk-navbar-item uk-bottom-center">
-        <form class="uk-search uk-search-navbar">
-          <span uk-search-icon></span>
-          <input id="searchinput" class="uk-search-input" type="search" placeholder="Search...">
-        </form>
-      </div>
-    </div>
-  </nav>
-  </div> 
+        {{!--
+        <div class="uk-navbar-center"> --}}
+          <div class="uk-navbar-item uk-bottom-center">
+            <form class="uk-search uk-search-navbar">
+              <span uk-search-icon></span>
+              <input id="searchinput" class="uk-search-input" type="search" placeholder="Search...">
+            </form>
+          </div>
+        </div>
+      </nav>
+  </div>
 </div>
 
 <!-- - - - - - -  - - - - - - -  Section 3/ Survey - - - - - - - - -  - - - - -->
@@ -108,10 +152,9 @@
   <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
     <h1 id="surveyLogo1" uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.3;" "uk-text-bold uk-text-large">
       <h1 id="survey">Survey</h1>
-      {{!-- <h2 id="section3h2">Structure Organically</h2> --}}
-      {{!-- <p id="section3p" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party!
-        Fill out
-        the empty spaces.</p> --}}
+      {{!--
+      <h2 id="section3h2">Structure Organically</h2> --}} {{!--
+      <p id="section3p" uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.3;">Its time to party! Fill out the empty spaces.</p> --}}
 
       <div class="uk-container-large uk-container ">
         <form class="uk-grid-small uk-text-center" id="hostform" method="POSt" uk-grid action="">
@@ -122,18 +165,21 @@
           </div>
 
           <div class="uk-width-1-2@s ">
-            <label id="surveyLabel" class="uk-form-label uk-form-large" for="hostname">Your Name<input class="uk-input" type="text" id="hostname"
-                name="name" required /></label>
+            <label id="surveyLabel" class="uk-form-label uk-form-large" for="hostname">Your Name
+            </label>
+            <input class="uk-input" type="text" id="hostname" name="name" required />
           </div>
 
           <div class="uk-width-1-2@s">
-            <label id="surveyLabel" class="uk-form-label uk-form-large" for="eventname">Gathering Name<input class="uk-input" type="text"
-                id="eventname" name="eventname" required /></label>
+            <label id="surveyLabel" class="uk-form-label uk-form-large" for="eventname">Gathering Name
+            </label>
+            <input class="uk-input" type="text" id="eventname" name="eventname" required />
           </div>
 
           <!-- Include Location Services? -->
           <div class="uk-width-1-1">
-            {{!-- <h3>--</h3> --}}
+            {{!--
+            <h3>--</h3> --}}
           </div>
 
           <div class="uk-width-1-1">
@@ -141,35 +187,43 @@
           </div>
 
           <div class="uk-width-1-4">
-            <label id="surveyLabel" class="uk-form-label" for="address">Address<input class="uk-input" type="text" name="address" id="address"
-                required /></label>
+            <label id="surveyLabel" class="uk-form-label" for="address">Address
+            </label>
+            <input class="uk-input" type="text" name="address" id="address" required />
           </div>
           <div class="uk-width-1-4">
-            <label id="surveyLabel" class="uk-form-label" for="city">City<input class="uk-input" type="text" name="city" id="city"
-                required /></label>
+            <label id="surveyLabel" class="uk-form-label" for="city">City
+            </label>
+            <input class="uk-input" type="text" name="city" id="city" required />
           </div>
           <div class="uk-width-1-4">
-            <label id="surveyLabel" class="uk-form-label" for="state">State<input class="uk-input" type="text" name="state" id="state"
-                required /></label>
+            <label id="surveyLabel" class="uk-form-label" for="state">State
+            </label>
+            <input class="uk-input" type="text" name="state" id="state" required />
           </div>
           <div class="uk-width-1-4">
-            <label id="surveyLabel" class="uk-form-label" for="zip">Zip<input class="uk-input" type="number" minlength="5" maxlength="5"
-                name="zip" id="zip" required /></label>
+            <label id="surveyLabel" class="uk-form-label" for="zip">Zip
+            </label>
+            <input class="uk-input" type="number" minlength="5" maxlength="5" name="zip" id="zip" required />
           </div>
-          
+
           <div class="uk-width-1-1">
             <h4 id="section3h4">When's it going to happen?</h4>
           </div>
 
           <div class="uk-width-1-3">
-            <label id="surveyLabel" class="uk-form-label" for="date">Date<input class="uk-input" type="date" name="date" id="date"
-                required /></label>
+            <label id="surveyLabel" class="uk-form-label" for="date">Date
+            </label>
+            <input class="uk-input" type="date" name="date" id="date" required />
           </div>
           <div class="uk-width-1-3">
             <label id="surveyLabel" class="uk-form-label" for="time">
-              Starts <input class="uk-input" type="time" name="time-start" id="time-start" required />
-              Ends <input class="uk-input" type="time" name="time-end" id="time-end" />
+              Starts
             </label>
+            <input class="uk-input" type="time" name="time-start" id="time-start" required />
+            <label id="surveyLabel" class="uk-form-label" for="time">Ends</label>
+            <input class="uk-input" type="time" name="time-end" id="time-end" />
+
           </div>
 
           <div class="uk-width-1-3">
@@ -189,39 +243,35 @@
             <select class="uk-select uk-form-large uk-form-width-large" id="eventtype">
               <option value="Potluck">Potluck</option>
               <option value="Baby Shower">Baby Shower</option>
-              <option value="Birthday Party">Birthday  Party</option>
+              <option value="Birthday Party">Birthday Party</option>
               <option value="Graduation Party">Graduation Party</option>
               <option value="Other">Other</option>
             </select>
           </div>
 
-         <div class="uk-width-1-1">
-          <h4>Any special attire?</h4>
+          <div class="uk-width-1-1">
+            <h4>Any special attire?</h4>
 
-          <select
-            class="uk-select uk-form-large uk-form-width-large"
-            id="attire"
-          >
-            <option value="Casual">Casual</option>
-            <option value="Night Out">Night Out</option>
-            <option value="Business Casual">Business Casual</option>
-            <option value="Business">Business</option>
-            <option value="Semi-formal">Semi-Formal</option>
-            <option value="Formal">Formal</option>
-            <option value="Costume">Costume</option>
-            <option value="Team">Team Attire</option>
-            <option value="Uniform">Uniform</option>
-            <option value="No Preference">No Preference / Other</option>
-          </select>
-        </div>
+            <select class="uk-select uk-form-large uk-form-width-large" id="attire">
+              <option value="Casual">Casual</option>
+              <option value="Night Out">Night Out</option>
+              <option value="Business Casual">Business Casual</option>
+              <option value="Business">Business</option>
+              <option value="Semi-formal">Semi-Formal</option>
+              <option value="Formal">Formal</option>
+              <option value="Costume">Costume</option>
+              <option value="Team">Team Attire</option>
+              <option value="Uniform">Uniform</option>
+              <option value="No Preference">No Preference / Other</option>
+            </select>
+          </div>
 
           <div class="uk-width-1-1">
             <h4 id="section3h4">Tell your guests what your Gathering is about</h4>
           </div>
 
           <div class="uk-width-1-1">
-            <textarea class="uk-textarea uk-form-width-large" name="time-start" id="description" minlength="1"
-              required></textarea>
+            <textarea class="uk-textarea uk-form-width-large" name="time-start" id="description" minlength="1" required></textarea>
           </div>
 
           {{!--
@@ -264,13 +314,11 @@
   <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.7">
     <h1 id="team">Team</h1>
     <p id="section4p" class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.8">
-      Hello fellow Gatherers. Our team has been working diligently to bring you a streamlined web application that
-      makes planning an event soothing,
-      intuitive, and stress free. We believe that time is precious and it should be spent having fun with the
-      people you care most about, not on tedious
-      tasks. The Gather team hopes that you will find the experience of interacting with our site as pleasant as the
-      one on which you are about to embark.
-      Check out our bio section below to find out more about the people who put this together. Lastly, don't just meet...
+      Hello fellow Gatherers. Our team has been working diligently to bring you a streamlined web application that makes planning
+      an event soothing, intuitive, and stress free. We believe that time is precious and it should be spent having fun with
+      the people you care most about, not on tedious tasks. The Gather team hopes that you will find the experience of interacting
+      with our site as pleasant as the one on which you are about to embark. Check out our bio section below to find out
+      more about the people who put this together. Lastly, don't just meet...
       <a id="littleLogo">Gather</a>.
     </p>
     <br>
@@ -278,7 +326,7 @@
     <br>
     <br>
     <hr>
-    <div class="uk-child-width-1-4@m"  uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+    <div class="uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
       <div class="uk-card uk-card-default uk-card-body">
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -287,8 +335,10 @@
             </div>
             <div class="uk-width-expand">
               <h3 class="uk-card-title uk-margin-remove-bottom">Abigail</h3>
-              <p class="uk-text-meta uk-text-center uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack
-                  Developer</time></p>
+              <p class="uk-text-meta uk-text-center uk-margin-remove-top">
+                <time datetime="2016-04-01T19:00">Full-Stack Developer
+                </time>
+              </p>
             </div>
           </div>
         </div>
@@ -297,17 +347,17 @@
         </div>
         <div class="uk-card-footer">
           <ul class="uk-iconnav">
-            <li><a href="#">
-                <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
-                  width="35px">
-              </a></li>
-            <li><a href="#">
-                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
-                  width="35px">
-              </a></li>
-            <li><a href="https://github.com/abigailjxn" target="_blank">
+           
+            <li>
+              <a href="#">
+                <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" width="35px">
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/abigailjxn" target="_blank">
                 <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
-              </a></li>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -320,8 +370,10 @@
               </div>
               <div class="uk-width-expand">
                 <h3 class="uk-card-title uk-margin-remove-bottom">Katie</h3>
-                <p class="uk-text-meta uk-text-center uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack
-                    Developer</time></p>
+                <p class="uk-text-meta uk-text-center uk-margin-remove-top">
+                  <time datetime="2016-04-01T19:00">Full-Stack Developer
+                  </time>
+                </p>
               </div>
             </div>
           </div>
@@ -330,17 +382,17 @@
           </div>
           <div class="uk-card-footer">
             <ul class="uk-iconnav">
-              <li><a href="#">
-                  <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
-                    width="35px">
-                </a></li>
-              <li><a href="#">
-                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
-                    width="35px">
-                </a></li>
-              <li><a href="https://github.com/ktburns214" target="_blank">
+              
+              <li>
+                <a href="#">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" width="35px">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/ktburns214" target="_blank">
                   <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
-                </a></li>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -354,7 +406,9 @@
               </div>
               <div class="uk-width-expand">
                 <h3 class="uk-card-title uk-margin-remove-bottom">Luis</h3>
-                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack Developer</time></p>
+                <p class="uk-text-meta uk-margin-remove-top">
+                  <time datetime="2016-04-01T19:00">Full-Stack Developer</time>
+                </p>
               </div>
             </div>
           </div>
@@ -363,17 +417,17 @@
           </div>
           <div class="uk-card-footer">
             <ul class="uk-iconnav">
-              <li><a href="#">
-                  <img src="https://cdn0.iconfinder.com/data/icons/social-media-2071/100/social-05-512.png" alt="gmail"
-                    width="35px">
-                </a></li>
-              <li><a href="#">
-                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
-                    width="35px">
-                </a></li>
-              <li><a href="https://github.com/lquint85" target="_blank">
+              
+              <li>
+                <a href="#">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" width="35px">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/lquint85" target="_blank">
                   <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
-                </a></li>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -387,28 +441,33 @@
               </div>
               <div class="uk-width-expand">
                 <h3 class="uk-card-title uk-margin-remove-bottom">Pearl</h3>
-                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Full-Stack Developer</time></p>
+                <p class="uk-text-meta uk-margin-remove-top">
+                  <time datetime="2016-04-01T19:00">Full-Stack Developer</time>
+                </p>
               </div>
             </div>
           </div>
           <div class="uk-card-body">
-            <p>"Don't hate me because I have it all.  Hate me because I'm curious".</p>
+            <p>"Don't hate me because I have it all. Hate me because I'm curious".</p>
           </div>
           <div class="uk-card-footer">
             <ul class="uk-iconnav  uk-iconnav-center">
-              <li><a href="https://www.linkedin.com/in/pearl-oyunbaatar-33562666/" target="_blank">
-                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn"
-                    width="35px">
-                </a></li>
-              <li><a href="https://github.com/gansuvd777" target="_blank">
+              <li>
+                <a href="https://www.linkedin.com/in/pearl-oyunbaatar-33562666/" target="_blank">
+                  <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-512.png" alt="LinkedIn" width="35px">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/gansuvd777" target="_blank">
                   <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="GitHub" width="35px">
-                </a></li>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    
+
 
     <br>
     <br>
@@ -436,6 +495,3 @@
 
 
 <script src="js/event.js"></script>
-
-
-
